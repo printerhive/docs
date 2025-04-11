@@ -1,0 +1,101 @@
+/* Úpravy UI prvků */
+
+/* Přidání české lokalizace pro tlačítko kopírování kódu */
+.vp-copy-code-button::before {
+  content: "Kopírovat";
+}
+
+.vp-copy-code-button.copied::before {
+  content: "Zkopírováno!";
+}
+
+/* Úprava pro další UI prvky podle potřeby */
+
+/* Styly pro přepínač jazyků */
+.VPNavBarMenuLink.VPNavBarMenuLanguage {
+  display: flex;
+  align-items: center;
+}
+
+.VPNavBarMenuLink.VPNavBarMenuLanguage::before {
+  content: "🌐";
+  margin-right: 4px;
+}
+
+/* PrinterHive brandové barvy */
+:root {
+  /* Printerhive brand color - oranžová/žlutá s vylepšeným kontrastem ve světlém režimu */
+  --vp-c-brand: #d99a00; /* Tmavší žlutá pro lepší kontrast v light mode */
+  --vp-c-brand-light: #c18600;
+  --vp-c-brand-lighter: #e0a714;
+  --vp-c-brand-dark: #b27d00;
+  --vp-c-brand-darker: #956800;
+
+  /* Tlačítka */
+  --vp-button-brand-bg: var(--vp-c-brand);
+  --vp-button-brand-hover-bg: var(--vp-c-brand-dark);
+  --vp-button-brand-active-bg: var(--vp-c-brand-darker);
+
+  /* Odkazy a zvýraznění */
+  --vp-c-brand-1: var(--vp-c-brand);
+  --vp-c-brand-2: var(--vp-c-brand-light);
+  --vp-c-brand-3: var(--vp-c-brand-lighter);
+
+  /* Zvýraznění aktivní položky v menu */
+  --vp-c-sponsor: var(--vp-c-brand);
+  
+  /* Barva pro indikátor aktivní stránky v bočním menu */
+  --vp-sidebar-active-color: var(--vp-c-brand);
+}
+
+/* Úprava stylu aktivního odkazu v hlavní navigaci */
+.VPNavBarMenuLink.active {
+  color: var(--vp-c-brand) !important;
+}
+
+/* Úprava nadpisů */
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3 {
+  color: var(--vp-c-brand);
+}
+
+/* Úprava pro domovskou stránku */
+.VPHero .VPImage {
+  filter: hue-rotate(45deg);
+}
+
+/* Úprava feature bloků na domovské stránce */
+.VPFeature {
+  border: 1px solid rgba(215, 154, 0, 0.2);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.VPFeature:hover {
+  border-color: var(--vp-c-brand);
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(215, 154, 0, 0.2);
+}
+
+/* Úprava tlačítek v hero sekci */
+.VPHero .VPButton.brand {
+  background-color: var(--vp-c-brand);
+  border-color: var(--vp-c-brand-dark);
+  color: white;
+}
+
+.VPHero .VPButton.brand:hover {
+  background-color: var(--vp-c-brand-dark);
+  border-color: var(--vp-c-brand-darker);
+}
+
+/* Úprava pro tmavý režim - vracíme původní žlutou, která je v tmavém režimu dobrá */
+.dark {
+  --vp-c-brand: #f2af0d;
+  --vp-c-brand-light: #ffc125;
+  --vp-c-brand-lighter: #ffd25e;
+  --vp-c-brand-dark: #e09d00;
+  --vp-c-brand-darker: #b27d00;
+  --vp-button-brand-hover-bg: var(--vp-c-brand-light);
+} 
