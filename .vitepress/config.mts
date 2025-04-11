@@ -53,7 +53,7 @@ export default defineConfig({
     ],
     
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/printerhive/printerhive-docs' }
+      { icon: 'github', link: 'https://github.com/printerhive/docs' }
     ],
     
     footer: {
