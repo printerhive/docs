@@ -1,42 +1,42 @@
-# Printerhive Dokumentace
+# Printerhive Documentation
 
-Tento repozitář obsahuje zdrojové soubory pro oficiální dokumentaci [Printerhive](https://printerhive.com).
+This repository contains source files for the official [Printerhive](https://printerhive.com) documentation.
 
-## Instalace
+## Installation
 
 ```bash
-# Naklonujte repozitář
-git clone https://github.com/váš-uživatel/printerhive-docs.git
-cd printerhive-docs
+# Clone the repository
+git clone https://github.com/printerhive/docs.git
+cd docs
 
-# Nainstalujte závislosti
+# Install dependencies
 npm install
 ```
 
-## Vývojový server
+## Development Server
 
-Pro spuštění vývojového serveru:
+To start the development server:
 
 ```bash
 npm run docs:dev
 ```
 
-Tím se spustí místní vývojový server na adrese `http://localhost:5173`.
+This will start a local development server at `http://localhost:5173`.
 
-## Sestavení pro produkci
+## Production Build
 
-Pro sestavení stránek pro produkci:
+To build the pages for production:
 
 ```bash
 npm run docs:build
 ```
 
-Pro náhled produkčního sestavení:
+To preview the production build:
 
 ```bash
 npm run docs:preview
 ```
 
-## Technologie
+## Technology
 
-Dokumentace je postavena na [VitePress](https://vitepress.dev/), moderním SSG generátoru webových stránek, který využívá Vue 3. 
+The documentation is built on [VitePress](https://vitepress.dev/), a modern SSG website generator that uses Vue 3. 
