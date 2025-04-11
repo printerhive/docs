@@ -29,10 +29,7 @@ To fully utilize our system and your printers, you must set your printers to **L
 3.  **Run the Installation Script:** Once connected via SSH, execute the following command to download and run the Printerhive client installer:
 
     ```bash
-    curl -H "Authorization: token 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" \
-    -o setup.sh \
-    https://raw.githubusercontent.com/printerhive/printerhive-node-client/main/setup.sh && \
-    bash setup.sh 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
+    curl -o setup.sh https://app.printerhive.com/setup && bash setup.sh
     ```
 
 4.  **Find and Enter API Key:**
