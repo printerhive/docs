@@ -9,9 +9,10 @@ Printerhive is a platform for managing and monitoring 3D printers, which allows 
 ## Quick Start
 
 1. [Account Registration](./getting-started/registration.md)
-2. [Prepare Raspberry Pi](./getting-started/prepare-raspberry-pi.md)
-3. [Client Installation](./getting-started/installation.md)
-4. [Connecting Your First Printer](./getting-started/connect-printer.md)
+2. [Hardware Requirements](./getting-started/hardware-requirements.md)
+3. [Prepare Raspberry Pi](./getting-started/prepare-raspberry-pi.md)
+4. [Client Installation](./getting-started/client-installation.md)
+5. [Connecting Your First Printer](./getting-started/connect-printer.md)
 
 ## System Requirements
 

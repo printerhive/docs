@@ -89,8 +89,4 @@ We recommend using **Raspberry Pi OS Lite (64-bit)** based on Debian Bookworm or
         7.  A terminal window will open asking for your username. Enter it and press Enter.
         8.  Enter your password when prompted and press Enter.
 
-    Once connected, you will see the command line prompt for your Raspberry Pi.
-
-## Next Step
-
-Once your Raspberry Pi is set up and you can access its command line, proceed to the [Client Installation](./installation.md) guide. 
+    Once connected, you will see the command line prompt for your Raspberry Pi. 

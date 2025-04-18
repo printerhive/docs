@@ -30,8 +30,9 @@ export default defineConfig({
         items: [
           { text: 'Introduction', link: '/' },
           { text: 'Registration', link: '/getting-started/registration' },
+          { text: 'Hardware Requirements', link: '/getting-started/hardware-requirements' },
           { text: 'Prepare Raspberry Pi', link: '/getting-started/prepare-raspberry-pi' },
-          { text: 'Client Installation', link: '/getting-started/installation' },
+          { text: 'Client Installation', link: '/getting-started/client-installation' },
           { text: 'Connect Printer', link: '/getting-started/connect-printer' }
         ]
       },
