@@ -22,7 +22,7 @@ To add a new location:
 
 When creating a new location, you have two options:
 
-*   **Add a new client:** This requires a separate Raspberry Pi for the new location. A unique API Key will be generated for this client, which you'll need during the [client installation process](/getting-started/installation).
+*   **Add a new client:** This requires a separate Raspberry Pi for the new location. A unique API Key will be generated for this client, which you'll need during the [client installation process](./../getting-started/client-installation.md).
 *   **Assign to existing clients:** Use this option if you want to segment printers connected to a single Raspberry Pi. For example, you might separate printers in a workshop from those in an office within the same building, all managed by one Raspberry Pi.
 
 ## Activating a New Client
