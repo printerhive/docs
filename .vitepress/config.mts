@@ -41,7 +41,8 @@ export default defineConfig({
           { text: 'Features Overview', link: '/features/' },
           { text: 'Monitoring', link: '/features/monitoring' },
           { text: 'Remote Management', link: '/features/remote-management' },
-          { text: 'Analytics', link: '/features/analytics' }
+          { text: 'Analytics', link: '/features/analytics' },
+          { text: 'Locations', link: '/features/locations' }
         ]
       },
       {
