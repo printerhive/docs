@@ -1,0 +1,14 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Printerhive Spelling Rule
+
+Always spell the company/product name as 'Printerhive'.
+- One word.
+- Capital 'P'.
+- Lowercase 'h'.
+
+**Correct:** Printerhive
+**Incorrect:** Printer Hive, Printer hive, printerhive
