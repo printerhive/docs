@@ -29,8 +29,4 @@ Registering an account on Printerhive is the first step to start managing your p
     *   **Important:** If you don't see the email in your main inbox, please **check your Spam or Junk folder**, as it might have landed there.
     *   Click the confirmation link or button within the email to activate your account.
 
-**Your account will not be active until you confirm your email address.**
-
-## Next Step
-
-Once your account is registered and activated, you can proceed to [Prepare Raspberry Pi](./prepare-raspberry-pi.md) for the client installation. 
+**Your account will not be active until you confirm your email address.** 
