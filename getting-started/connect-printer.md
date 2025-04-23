@@ -1,4 +1,4 @@
-# Connecting Your First Printer
+# Connecting Your Printer Manually
 
 This guide explains how to add your Bambu Lab printer to your Printerhive account.
 
