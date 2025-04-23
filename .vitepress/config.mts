@@ -41,12 +41,12 @@ export default defineConfig({
         text: 'Features',
         items: [
           { text: 'Features Overview', link: '/features/' },
-          { text: 'Monitoring', link: '/features/monitoring' },
+          { text: 'Basic Printer Control', link: '/features/basic-printer-control' },
           { text: 'File Management', link: '/features/file-management' },
+          { text: 'Monitoring', link: '/features/monitoring' },
+          { text: 'Locations', link: '/features/locations' },
           { text: 'Notifications', link: '/features/notifications' },
           { text: 'Scheduled Prints', link: '/features/scheduled-prints' },
-          { text: 'Locations', link: '/features/locations' },
-          { text: 'Basic Printer Control', link: '/features/basic-printer-control' },
           { text: 'Lighting Automation', link: '/features/lighting-automation' }
         ]
       },
