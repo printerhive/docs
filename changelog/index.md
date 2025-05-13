@@ -1,9 +1,9 @@
 # Changelog
 
-## April 10, 2024
+## April 10, 2025
 
 *   **Feature Updates & Enhancements:**
-    *   **AMS Categorization:** Introduced distinct categories for AMS units (e.g., Lite, 2 PRO, HT).
+    *   **AMS Categorization:** Introduced distinct categories for AMS units (e.g., AMS, AMS Lite,AMS 2 PRO, AMS HT).
     *   **AMS Sensor Data:** Enabled the display of temperature and humidity for supported AMS units.
     *   **Dashboard - Location Names:** Location names are now shown alongside printers in the Dashboard for users managing multiple locations.
     *   **Dashboard - Printer Identification:** Printer manufacturer and model are now displayed in the Dashboard.
