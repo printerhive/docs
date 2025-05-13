@@ -51,6 +51,13 @@ export default defineConfig({
         ]
       },
       {
+        text: 'Guides',
+        items: [
+          { text: 'Bambu Lab Factory Reset', link: '/guides/bambu-lab-factory-reset' },
+          { text: 'Activating Camera for X1 & H2D', link: '/guides/activating-camera-bambu-lab-x1-h2d' }
+        ]
+      },
+      {
         text: 'Updates',
         items: [
           { text: 'Changelog', link: '/changelog/' }

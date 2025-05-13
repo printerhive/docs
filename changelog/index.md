@@ -1,5 +1,10 @@
 # Changelog
 
+## Guides
+
+*   **NEW:** [How to Perform a Factory Reset on Your Bambu Lab Printer After a Firmware Update](/guides/bambu-lab-factory-reset.md) - A guide to help resolve communication issues after a Bambu Lab firmware update.
+*   **NEW:** [Activating Camera for Bambu Lab X1 & H2D in Printerhive](/guides/activating-camera-bambu-lab-x1-h2d.md) - Guide to enable camera live view for X1 & H2D series printers in Printerhive by activating "LAN Only Liveview".
+
 ## April 10, 2025
 
 *   **Feature Updates & Enhancements:**
