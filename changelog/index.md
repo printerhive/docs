@@ -1,5 +1,19 @@
 # Changelog
 
+## April 10, 2024
+
+*   **Feature Updates & Enhancements:**
+    *   **AMS Categorization:** Introduced distinct categories for AMS units (e.g., Lite, 2 PRO, HT).
+    *   **AMS Sensor Data:** Enabled the display of temperature and humidity for supported AMS units.
+    *   **Dashboard - Location Names:** Location names are now shown alongside printers in the Dashboard for users managing multiple locations.
+    *   **Dashboard - Printer Identification:** Printer manufacturer and model are now displayed in the Dashboard.
+*   **Ongoing Development:**
+    *   **H2D Integration:** Initial monitoring capabilities for H2D systems are now active. Full integration is currently in progress.
+    *   **Klipper Printer Support:** Implementation of Klipper-based printer support is approximately 60% complete, with active development towards full feature parity.
+*   **Bug Fixes:** Addressed various minor bugs and improved overall system stability.
+*   **Community & Events:**
+    *   **Maker Faire Prague:** Successfully presented Printerhive at Maker Faire Prague!
+
 ## March 28, 2025
 
 *   **Infrastructure & API Updates:** Major changes deployed to our backend systems.
