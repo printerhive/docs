@@ -59,13 +59,15 @@ Given the affordability of models like the Raspberry Pi Zero 2 W (for minimal se
 
 ## Unsupported Hardware Configurations
 
-To ensure stability and full functionality, the Printerhive client application is designed and optimized **exclusively for the supported Raspberry Pi models** listed above.
+To ensure stability, full functionality, and access to our technical support, the Printerhive client application is designed and optimized **exclusively for the supported Raspberry Pi models** listed above.
 
-The following are **not supported** for hosting the Printerhive client:
+While the Printerhive client (which runs in a Docker container) might theoretically operate on other hardware setups, please be aware of the following:
 
-*   **NAS (Network Attached Storage) Devices:** The architecture and software environment of NAS systems are not compatible.
-*   **Standard Servers / Virtual Machines (VMs):** While it might be theoretically possible to run the client in a Docker container on other Linux systems or VMs, this is not officially supported and may lead to unexpected issues.
-*   **Other Single-Board Computers (SBCs):** Only the Raspberry Pi models listed are supported. Other SBCs (e.g., Orange Pi, Banana Pi) are not tested or supported.
+*   **NAS (Network Attached Storage) Devices:** Running the Printerhive client on NAS devices is **not officially supported.** While some users might attempt this, we do not provide technical support for such configurations, and you may encounter compatibility or performance issues due to the specific architecture and software environment of NAS systems.
+*   **Standard Servers / Virtual Machines (VMs):** Similarly, running the client in a Docker container on standard Linux servers or within Virtual Machines is **not officially supported.** While it may function, Printerhive does not offer technical support for these setups, and unexpected issues or limitations may arise.
+*   **Other Single-Board Computers (SBCs):** Only the Raspberry Pi models listed are supported. Other SBCs (e.g., Orange Pi, Banana Pi) are not tested or supported, and we do not provide assistance for their use with Printerhive.
+
+For the best experience and to ensure you can receive help from our support team, please use one of the recommended Raspberry Pi models.
 
 ## Important Printer Configuration Note (Bambu Lab)
 
