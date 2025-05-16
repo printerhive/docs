@@ -19,7 +19,7 @@ While our Discord community is a great first stop, we also offer other support a
 
 1.  **Documentation (You are here!):**
     :::tip Before Reaching Out
-    We encourage you to explore this documentation site thoroughly before contacting support. You might find quick answers in the [Getting Started](./../getting-started/), [Features](./../features/), [Guides](./../guides/), or [Troubleshooting](./../troubleshooting/) sections.
+    We encourage you to explore this documentation site thoroughly before contacting support. You might find quick answers in the [Getting Started](/), [Features](./../features/), [Guides](./../guides/bambu-lab-factory-reset.md), or [Troubleshooting](./../troubleshooting/) sections.
     :::
 
 2.  **Live Chat (Hobby+ Plans):**
