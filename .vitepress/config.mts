@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig, type DefaultTheme } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -21,7 +21,8 @@ export default defineConfig({
     nav: [
       { text: 'Getting Started', link: '/' },
       { text: 'Features', link: '/features/' },
-      { text: 'Changelog', link: '/changelog/' }
+      { text: 'Changelog', link: '/changelog/' },
+      { text: 'Community & Support', link: '/community/' }
     ],
     
     sidebar: [
@@ -39,8 +40,12 @@ export default defineConfig({
       },
       {
         text: 'Features',
+        collapsible: true,
+        collapsed: true,
         items: [
           { text: 'Features Overview', link: '/features/' },
+          { text: 'Supported Printers & Features', link: '/features/supported-printers' },
+          { text: 'Swap Mod Integration', link: '/features/swap-mod' },
           { text: 'Basic Printer Control', link: '/features/basic-printer-control' },
           { text: 'File Management', link: '/features/file-management' },
           { text: 'Monitoring', link: '/features/monitoring' },
@@ -52,9 +57,24 @@ export default defineConfig({
       },
       {
         text: 'Guides',
+        collapsible: true,
+        collapsed: true,
         items: [
           { text: 'Bambu Lab Factory Reset', link: '/guides/bambu-lab-factory-reset' },
-          { text: 'Activating Camera for X1 & H2D', link: '/guides/activating-camera-bambu-lab-x1-h2d' }
+          { text: 'Activating Camera for X1 & H2D', link: '/guides/activating-camera-bambu-lab-x1-h2d' },
+          { text: 'Changing Wi-Fi Configuration on Raspberry Pi', link: '/guides/change-rpi-wifi' }
+        ]
+      },
+      {
+        text: 'Troubleshooting',
+        items: [
+          { text: 'Common Issues', link: '/troubleshooting/' }
+        ]
+      },
+      {
+        text: 'Community & Support',
+        items: [
+          { text: 'Help & Feedback', link: '/community/' }
         ]
       },
       {
@@ -63,7 +83,7 @@ export default defineConfig({
           { text: 'Changelog', link: '/changelog/' }
         ]
       }
-    ],
+    ] as DefaultTheme.SidebarItem[],
     
     socialLinks: [
       {

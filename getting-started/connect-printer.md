@@ -4,6 +4,8 @@ This guide explains how to add your Bambu Lab printer to your Printerhive accoun
 
 **Prerequisite:** Ensure your Bambu Lab printer is turned on, connected to the same Wi-Fi network as your Printerhive client device (e.g., Raspberry Pi), and set to **LAN Mode**.
 
+**Highly Recommended:** For a stable connection, we strongly advise [setting up a static IP address (IP reservation)](#importance-of-ip-address-reservation-static-ip) for your printer in your router settings *before* adding it to Printerhive or as soon as possible thereafter. This prevents connection issues if your printer's IP address changes.
+
 ## Finding Printer Information
 
 Before adding the printer in Printerhive, you need to gather three pieces of information from your printer's screen:
@@ -51,12 +53,44 @@ For detailed information specific to your printer model, including menu navigati
 
 Printerhive will now attempt to connect to your printer using the provided details. If successful, your printer should appear in the Printers list shortly.
 
+## Importance of IP Address Reservation (Static IP)
+
+To ensure a stable and reliable connection for your printers to Printerhive, we **strongly recommend setting up IP address reservations** for each of your printers in your router.
+
+When a printer (or any other device) connects to your network, the router typically assigns it an IP address dynamically (via DHCP). This dynamic IP address can change from time to time, for example, after restarting the printer, router, or when the IP address "lease" expires.
+
+If the printer's IP address changes, the Printerhive client may not be able to automatically find it at the new address, which will cause the printer to appear offline in the application.
+
+**IP address reservation (sometimes referred to as "static DHCP" or "DHCP reservation")** instructs your router to always assign the same IP address to a specific printer (identified by its MAC address). This ensures that the printer's IP address remains constant.
+
+**How to set up IP address reservation:**
+
+1.  Find your printer's MAC address. You can usually find it in the printer's network settings or on a label on the device.
+2.  Log in to your router's administration interface.
+3.  Find the DHCP settings section, often called "DHCP Reservation," "Static Leases," or similar.
+4.  Add a new reservation, pairing the printer's MAC address with a desired (and available) IP address from your local range.
+5.  Save the settings and, if necessary, restart your router and printer.
+
+The procedure may vary depending on your router model. Please consult your router's manual for specific instructions.
+
 ## Troubleshooting
 
 **Cannot Connect / Printer Offline:** This is often caused by incorrect connection details or setup. Please check the following points:
 
+*   **Printer IP Address Changed?** This is a very common issue. If you haven't set up an IP address reservation for your printer in your router (see [Importance of IP Address Reservation](#importance-of-ip-address-reservation-static-ip) above), its IP address might have changed (e.g., after a router or printer restart).
+    *   Verify the current IP address on the printer's display.
+    *   If it differs from the one entered in Printerhive, you must update it:
+        1.  Go to the "Printers" section in Printerhive.
+        2.  Click on the printer you want to edit.
+        3.  In the printer details, correct the IP address and save the changes.
+    *   **Solution:** Set up an IP address reservation in your router to prevent this from happening again.
+
 #### IP Address Check
 Ensure the IP Address exactly matches the one shown on your printer's network settings screen.
+*   **Has the printer's IP address changed?** If you haven't set up an IP address reservation (see above), your printer's IP address might have changed. Verify the current IP address on the printer's display. If it differs from the one entered in Printerhive, you must update it in Printerhive:
+    1.  Go to the "Printers" section.
+    2.  Click on the printer you want to edit.
+    3.  In the printer details, correct the IP address and save the changes.
 
 #### Access Code Check
 This code is **case-sensitive**. Verify you have entered it *exactly* as it appears on the printer screen, including uppercase and lowercase letters.

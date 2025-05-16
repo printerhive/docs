@@ -27,6 +27,19 @@ Before proceeding with the installation, please ensure your hardware meets the [
 
 5.  **Installation Complete:** Once the script finishes, the Printerhive client is installed and running. You can monitor its status and proceed with adding printers in the Printerhive web application. You can close the SSH connection.
 
+## Troubleshooting Installation Issues
+
+The following issues may occur during installation:
+
+*   **Incorrect or invalid API Key:** If you entered the API key manually (using the alternative installation method), ensure you copied it completely and without errors. You can find your API key in the Printerhive web application under the "Locations" section.
+*   **Unstable internet connection:** The installation script downloads necessary packages and Docker images. If your internet connection is unstable or slow, a download error may occur, and the installation will fail. Ensure a stable internet connection for the Raspberry Pi throughout the installation.
+*   **Insufficient SD card space:** Make sure you have enough free space on your SD card. Minimum SD card size requirements are listed in the [Hardware Requirements](./hardware-requirements.md) section.
+*   **Permission issues:** The installation script requires `sudo` privileges for some operations. Run the command as instructed, typically with `sudo bash setup.sh`.
+*   **Power interruption:** A sudden power loss to the Raspberry Pi during installation can lead to an inconsistent state and installation failure.
+*   **Previous failed installation:** If you are attempting to reinstall after a previous failure, fragments may remain on the system that cause conflicts. In such cases, the simplest solution might be to start with a fresh installation of Raspberry Pi OS.
+
+If problems persist, we recommend checking the installation script's output for specific error messages that might indicate the cause of the problem.
+
 If you encounter any issues or have questions during the process, feel free to join our community:
 
 *   **Discord:** [Join our Discord server](https://discord.gg/AwNP6HwvMZ) 

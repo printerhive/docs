@@ -1,5 +1,19 @@
 # Changelog
 
+## May 16, 2025
+
+*   **Feature Updates & Enhancements:**
+    *   **New "Reserved" Printer Status:** Introduced support for a non-standard "Reserved" printer status. This status is displayed on a printer after a print job is sent to it and remains active until the printer physically starts printing. This enhancement helps users easily identify which printers are already allocated for upcoming jobs, simplifying queue management for sequential prints.
+    *   **Persistent Column Visibility in Print Jobs:** Column visibility settings (show/hide) in all three Print Jobs sections (Queue, Current, History) are now saved per user. These preferences are preserved across devices and sessions and will no longer reset to their default state. (Note: Separate settings for PC/Tablet/Mobile can be considered for future implementation based on user requirements.)
+    *   **Plate Identification in File Detail View:** Plate names or numbers are now displayed above their respective images in the print file detail view. If a plate name is too long to fit, the full name will be shown on hover.
+
+*   **UI/UX Changes:**
+    *   **Print Job Submission Redirect Update:** The redirect behavior after sending a file to print has been temporarily changed. Users are now redirected to the print **Queue** section instead of the "Current Prints" section.
+    *   **Print Configuration Button Renamed:** The "Save" button within the print configuration dialog has been renamed to "Save to Queue" to better reflect its action.
+
+*   **API & Backend Improvements:**
+    *   **Print Job Status Accuracy:** Improved API logic to address an issue where print jobs sometimes remained in the "Current Prints" section even after they had actually finished. Completed jobs should now be correctly and promptly moved to history.
+
 ## Guides
 
 *   **NEW:** [How to Perform a Factory Reset on Your Bambu Lab Printer After a Firmware Update](/guides/bambu-lab-factory-reset.md) - A guide to help resolve communication issues after a Bambu Lab firmware update.
@@ -14,7 +28,7 @@
     *   **Dashboard - Printer Identification:** Printer manufacturer and model are now displayed in the Dashboard.
 *   **Ongoing Development:**
     *   **H2D Integration:** Initial monitoring capabilities for H2D systems are now active. Full integration is currently in progress.
-    *   **Klipper Printer Support:** Implementation of Klipper-based printer support is approximately 60% complete, with active development towards full feature parity.
+    *   **Klipper Printer Support:** Actively under development with the goal of achieving full feature parity. Significant progress has been made.
 *   **Bug Fixes:** Addressed various minor bugs and improved overall system stability.
 *   **Community & Events:**
     *   **Maker Faire Prague:** Successfully presented Printerhive at Maker Faire Prague!
