@@ -1,5 +1,43 @@
 # Changelog
 
+## June 24, 2025
+
+*   **API for Higher-Tier Plans (In-Progress):**
+    *   We have started development on a new API for our **Professional** and **Business** plans.
+    *   The Professional plan will include read-only API access, while the Business plan will feature full read/write capabilities, allowing for powerful integrations like automatically queuing print jobs from an e-commerce store upon order creation.
+*   **Internal Logic & Communication Refactor:**
+    *   A complete overhaul of the application's internal logic and the communication with the Raspberry Pi client has been completed. This change unifies the communication protocol for printers from different manufacturers, improving stability and scalability.
+*   **Feature Updates & Enhancements:**
+    *   **Google Sign-In/Registration:** You can now sign up and log in to Printerhive using your Google account.
+*   **Bug Fixes:**
+    *   This update also includes numerous bug fixes and performance improvements.
+
+## June 11, 2025
+
+*   **UI/UX & Quality of Life Updates:**
+    *   **Dashboard Sounds:** Introduced audible notifications on the dashboard for key events. Sounds can be enabled or disabled in user settings.
+    *   **Bulk File Management:** Users can now select and move multiple files at once in both the Queue and Files sections. Bulk selection is supported via Shift-click, allowing for more efficient file management.
+    *   **Macro Loading:** The system now only loads non-hidden macros, simplifying the user interface and reducing clutter.
+    *   **Profile Pictures:** Added the ability for users to upload and change their profile picture in user settings.
+    *   **Folder Management:** Resolved an issue with folder deletion and added the ability to set a main folder as the default for quicker access.
+    *   **Notification Bubbles:** All notification bubbles across the application now automatically hide after a short duration to provide a cleaner user experience.
+    *   **Print from History:** Added the functionality to start a new print job directly from the print history list in the printer detail view.
+
+## June 2, 2025
+
+*   **Major Feature Launch: Klipper Support**
+    *   **Klipper Integration:** Printerhive now officially supports Klipper-based printers alongside Bambu Lab printers, creating a unified interface to manage multi-vendor printer fleets.
+    *   **Remote Access without VPN:** Users can securely access and control their Klipper printers from anywhere in the world without needing to configure a VPN or open ports.
+    *   **Seamless Integration:** The integration is designed to be seamless. Users can continue to use their existing Klipper interface (e.g., Mainsail/Fluidd) as usual. Printerhive mirrors all data, ensuring no loss of functionality or history.
+    *   **Free Testing Period:** To celebrate the launch, all accounts (including Free tier) can connect and manage an unlimited number of Klipper printers until July 9, 2025. After this date, standard account limits will apply to the total number of printers (both Klipper and Bambu Lab).
+    *   **Initial Klipper Features & Known Limitations:**
+        *   **Current Functionality:** Users can upload individual gcode files to Printerhive and initiate prints on their Klipper machines.
+        *   **Ongoing Development:** Full feature parity is in active development. Features being finalized in the coming days/weeks include:
+            *   Direct print submission from OrcaSlicer via Printerhive.
+            *   Multi-plate 3mf file support.
+            *   Advanced printer controls (nozzle, fans, flow, motors, Z-tilt).
+            *   Support for multi-material systems.
+
 ## May 16, 2025
 
 *   **Feature Updates & Enhancements:**
