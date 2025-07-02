@@ -1,5 +1,27 @@
 # Changelog
 
+## July 2, 2025
+
+*   **Feature Updates & Enhancements:**
+    *   **Real-time Printer Status:** The printer overview and printer detail pages now display up to 49 different real-time statuses for ongoing actions, such as "Bed Heating," "Bed Leveling," and more.
+    *   **New Nozzle Support:** Added support for new nozzles included in the latest Bambu Lab printer firmware.
+    *   **API Expansion:** Our API has been expanded with additional endpoints to support new features and integrations.
+
+*   **UI/UX Changes:**
+    *   **New AMS Interface:** A redesigned user interface for the AMS has been implemented in the printer detail view for improved clarity and management.
+    *   **Printer Model in Queue:** The print queue now includes a column indicating the specific printer model for which each file was sliced.
+    *   **Print Job Details:** The "Start Print" dialog now displays key information about the print job, including file name, plate name, material weight, estimated duration, and completion time.
+    *   **Reprint from History:** You can now restart a print or add it back to the queue directly from the print history.
+
+*   **Client & Backend Improvements:**
+    *   **Client Job Processing Logic:** The Printerhive client (for Raspberry Pi and similar devices) now only processes jobs that are less than 15 seconds old. This prevents unintended printer actions during internet outages or other communication failures.
+
+*   **Ongoing Development:**
+    *   **Bambu Lab H2D Integration:** We are finalizing the full integration of the dual-toolhead Bambu Lab H2D printer.
+
+*   **Bug Fixes:**
+    *   This update also includes numerous bug fixes and performance improvements.
+
 ## June 24, 2025
 
 *   **API for Higher-Tier Plans (In-Progress):**
