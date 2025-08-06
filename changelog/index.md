@@ -1,5 +1,22 @@
 # Changelog
 
+## August 6, 2025
+
+*   **Core Improvements:**
+    *   **Missing Translations:** Added missing translations throughout the application.
+    *   **OrcaSlicer File Sending:** Improved file upload functionality from OrcaSlicer.
+    *   **Column Visibility:** Fixed column hiding functionality in print overview tables.
+    *   **Printer Commands:** Enhanced command sending to printers with significantly faster response times.
+
+*   **UI/UX Changes:**
+    *   **Print Time Display:** Minor design improvements for better print time visualization.
+    *   **File Detail Zoom:** Added zoom functionality for print plates in file detail view.
+    *   **Remote Client Restart:** Added a button for remote client restart in location settings.
+    *   **Queue Button Consolidation:** Unified the confusing "Configure" and "Print" buttons in the queue into a single "Print" button for better user experience.
+
+*   **Bug Fixes:**
+    *   Various minor fixes and improvements based on user feedback.
+
 ## August 1, 2025
 
 *   **🚀 Major Client Update:**
