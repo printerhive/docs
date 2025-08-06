@@ -17,7 +17,7 @@ Before you begin, ensure you have the following:
 
 *   A functional Raspberry Pi with a compatible operating system installed. See [Hardware Requirements](./hardware-requirements.md) and [Prepare Raspberry Pi](./prepare-raspberry-pi.md).
 *   A stable internet connection for the Raspberry Pi.
-*   A 3D printer compatible with Printerhive (currently supports Bambu Lab printers).
+*   A 3D printer compatible with Printerhive (currently supports Bambu Lab 3D printers and printers with Klipper firmware).
 
 > **Note for Advanced Users:** While this guide focuses on Raspberry Pi installation, the Printerhive client runs in Docker and can be installed on various other devices such as Synology NAS, virtual machines, Mac computers, servers, and other systems that support Docker.
 
