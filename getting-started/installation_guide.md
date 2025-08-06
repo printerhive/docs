@@ -19,6 +19,8 @@ Before you begin, ensure you have the following:
 *   A stable internet connection for the Raspberry Pi.
 *   A 3D printer compatible with Printerhive (currently supports Bambu Lab printers).
 
+> **Note for Advanced Users:** While this guide focuses on Raspberry Pi installation, the Printerhive client runs in Docker and can be installed on various other devices such as Synology NAS, virtual machines, Mac computers, servers, and other systems that support Docker.
+
 ## Step 2: Client Installation
 
 Once you are logged into your Raspberry Pi (e.g., via SSH), you need to install the Printerhive client software.
@@ -27,20 +29,19 @@ Once you are logged into your Raspberry Pi (e.g., via SSH), you need to install 
 2.  **Execute the Command:** Paste the command into your Raspberry Pi's terminal/command line.
 3.  **Confirm:** Press `Enter` to run the script.
 4.  **Enter Password:** During the installation, you might be prompted to enter the password for your Raspberry Pi user.
-5.  **Wait for Completion:** The installation process duration varies depending on your Raspberry Pi model and SD card speed. It can take anywhere from approximately **5 minutes** (e.g., Raspberry Pi 5) up to **40 minutes** (e.g., Raspberry Pi Zero).
+5.  **Wait for Completion:** The installation process is quick and typically completes within 1 minute. Even on slower devices, it should take no more than a few minutes.
 6.  **Monitor Progress:** You can monitor the installation progress directly in the Printerhive web interface during the setup guide steps.
 
 **What the installer does:**
 
 The installation script automates several setup tasks, including:
-*   Installing necessary system packages (like `npm`).
 *   Installing Docker and Docker Compose.
-*   Downloading the Printerhive client application.
+*   Downloading the Printerhive client binary.
 *   Creating the necessary application environment.
 *   Configuring settings related to printer communication.
-*   Installing application dependencies.
 *   Starting the Printerhive client service.
-*   Initiating the search for compatible printers on your network.
+*   Automatically scanning the network for Bambu Lab printers and adding them to your account (if not already present).
+*   Synchronizing with the cloud if you already have printers in your account.
 
 *Note: For detailed instructions on SSH access and initial Raspberry Pi setup, refer to the [Prepare Raspberry Pi](./prepare-raspberry-pi.md) guide.*
 

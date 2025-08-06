@@ -2,6 +2,8 @@
 
 Before proceeding with the installation, please ensure your hardware meets the [Hardware Requirements](./hardware-requirements.md) and that you have prepared your Raspberry Pi device following the [Prepare Raspberry Pi](./prepare-raspberry-pi.md) guide.
 
+> **Note for Advanced Users:** While this guide is primarily written for Raspberry Pi installation, the Printerhive client runs in Docker and can be installed on various other devices such as Synology NAS, virtual machines, Mac computers, servers, and other systems that support Docker. If you're technically proficient and prefer to use a different platform, you can adapt these instructions accordingly.
+
 ## Installation Steps
 
 1.  **Connect via SSH:** Access the command line of your device using SSH. Instructions for connecting from Windows, macOS, and Linux are included at the end of the [Preparing Raspberry Pi OS Lite guide](./prepare-raspberry-pi.md#_10-power-on-and-connect).
@@ -10,7 +12,7 @@ Before proceeding with the installation, please ensure your hardware meets the [
     *   **Recommended Method:** Copy the command directly from the web application's installation guide. This command usually includes your unique API key, simplifying the process.
     *   **Alternative Method:** If you prefer or need to run a generic command, you can use the following. Note that if you use this method, you **will** need to manually provide the API key when prompted (see Step 3).
         ```bash
-        curl -s https://app.printerhive.com/setup -o setup.sh && sudo bash setup.sh
+        curl -o install-printerhive.sh https://app.printerhive.com/install && bash install-printerhive.sh
         ```
 
 3.  **Provide API Key (If Necessary):**
@@ -23,9 +25,9 @@ Before proceeding with the installation, please ensure your hardware meets the [
         *   Paste the copied **API key** into the SSH terminal when prompted (e.g., using right-click, `Shift+Insert`, or `Cmd+V`, depending on your terminal) and press Enter.
     *   If you used the recommended command from the web guide (Step 2), it should already contain the key, and you might not be prompted for it separately.
 
-4.  **Wait for Completion:** The installation process may take several minutes, potentially up to 40 minutes on slower devices like Raspberry Pi Zero (refer to the [Hardware Requirements](./hardware-requirements.md#supported-devices) for performance examples).
+4.  **Wait for Completion:** The installation process is quick and typically completes within 1 minute. Even on slower devices, it should take no more than a few minutes.
 
-5.  **Installation Complete:** Once the script finishes, the Printerhive client is installed and running. You can monitor its status and proceed with adding printers in the Printerhive web application. You can close the SSH connection.
+5.  **Installation Complete:** Once the script finishes, the Printerhive client is installed and running. The client will automatically scan the network for Bambu Lab printers and add them to your account (if they are not already present, for example during a fresh installation). If you already have printers in your account, the client will synchronize with the cloud. You can monitor the client status and manage your printers in the Printerhive web application. You can close the SSH connection.
 
 ## Troubleshooting Installation Issues
 

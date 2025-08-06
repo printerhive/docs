@@ -73,8 +73,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         items: [
           { text: 'Bambu Lab Factory Reset', link: '/guides/bambu-lab-factory-reset' },
           { text: 'Activating Camera for X1 & H2D', link: '/guides/activating-camera-bambu-lab-x1-h2d' },
-          { text: 'Changing Wi-Fi Configuration on Raspberry Pi', link: '/guides/change-rpi-wifi' },
-          { text: 'Manual Client Update', link: '/guides/manual-client-update' }
+          { text: 'Changing Wi-Fi Configuration on Raspberry Pi', link: '/guides/change-rpi-wifi' }
         ]
       },
       {
