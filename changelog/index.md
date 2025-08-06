@@ -4,11 +4,8 @@
 
 *   **🚀 Major Client Update:**
     *   **Completely New Client:** We have released a completely redesigned, faster, and more reliable client for 2025.
-    *   **Manual Update Required:** Due to security reasons (we cannot access your device), this update cannot be performed automatically. This is a one-time manual update following the same process as installing a new client.
-    *   **Installation Guide:** Follow the installation guide at: https://app.printerhive.com/guide/step/1
-    *   **Quick Update Process:** The update takes less than two minutes. The installer will automatically remove the old client and synchronize your printers without disruption.
-    *   **Legacy Client Support:** The old client will continue to function but will no longer be actively supported after August 15, 2025. You may miss out on new features if you don't update.
-    *   **Seamless Transition:** Nothing will be disrupted during the update process - just run the single command provided in the installation guide.
+    *   **Manual Update Required:** Due to security reasons (we cannot access your device), this update cannot be performed automatically.
+    *   **Legacy Client Support:** The old client will continue to function but will no longer be actively supported after August 15, 2025.
 
 ## July 16, 2025
 
