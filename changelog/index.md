@@ -1,5 +1,19 @@
 # Changelog
 
+## July 16, 2025
+
+*   **Feature Updates & Enhancements:**
+    *   **Universal Nozzle Support:** Full support for all nozzle types, including those not yet available in OrcaSlicer.
+    *   **Smart Print Queue Logic:** Implemented intelligent print start logic that automatically selects the best available printer – a step toward a fully automated queue system.
+    *   **Multi-Hotend Support:** New hotend management logic to support printers with multiple hotends and toolchanger systems.
+    *   **AMS Drying Completion Time:** The AMS dialog now displays filament drying completion time for PRO and HT models.
+
+*   **Unique Features:**
+    *   **AMS Drying Completion Notifications:** Introduced unique notifications for AMS filament drying completion – a feature exclusive to Printerhive.
+
+*   **UI/UX Changes:**
+    *   **Enhanced Date Display:** Improved date display logic that hides the year for current items to reduce visual clutter and improve readability.
+
 ## July 2, 2025
 
 *   **Feature Updates & Enhancements:**
