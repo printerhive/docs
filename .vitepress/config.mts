@@ -42,10 +42,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         items: [
           { text: 'Introduction', link: '/' },
           { text: 'Registration', link: '/getting-started/registration' },
+          { text: 'Supported Printers', link: '/getting-started/supported-printers' },
           { text: 'Hardware Requirements', link: '/getting-started/hardware-requirements' },
           { text: 'Prepare Raspberry Pi', link: '/getting-started/prepare-raspberry-pi' },
           { text: 'Client Installation', link: '/getting-started/client-installation' },
-          { text: 'Installation Guide', link: '/getting-started/installation_guide' },
           { text: 'Connect Printer', link: '/getting-started/connect-printer' }
         ]
       },
@@ -55,7 +55,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         collapsed: true,
         items: [
           { text: 'Features Overview', link: '/features/' },
-          { text: 'Supported Printers & Features', link: '/features/supported-printers' },
           { text: 'Swap Mod Integration', link: '/features/swap-mod' },
           { text: 'Basic Printer Control', link: '/features/basic-printer-control' },
           { text: 'File Management', link: '/features/file-management' },

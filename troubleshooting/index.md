@@ -17,7 +17,7 @@ If your printer appears offline, is unresponsive in Printerhive after initial se
     *   **Has it Changed?** If you haven't set up an [IP address reservation (Static IP)](./../getting-started/connect-printer.md#importance-of-ip-address-reservation-static-ip) in your router, the printer's IP address may have changed (e.g., after a printer or router restart). This is a very common cause of connection loss.
     *   **Update in Printerhive:** If the IP address has changed, you *must* update it in Printerhive: Go to the "Printers" section, click on the printer, and edit its IP address details.
     *   **Strongly Recommended:** To prevent this from happening again, [set up an IP address reservation (Static IP)](./../getting-started/connect-printer.md#importance-of-ip-address-reservation-static-ip) for your printer in your router.
-    *   **LAN Mode (Bambu Lab Printers):** Double-check that your Bambu Lab printer is still in **LAN Mode**. This can sometimes be reset, for example, after a printer firmware update.
+    *   **LAN Mode (Bambu Lab Printers):** Double-check that your Bambu Lab printer is still in **LAN Mode**. This can sometimes be reset, for example, after a printer firmware update. On newer firmware versions, also verify that **Developer Mode** is enabled if available.
 
 2.  **Verify Basic Printer Status:**
     *   Ensure your printer is powered on and has completed its startup sequence.

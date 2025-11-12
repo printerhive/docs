@@ -8,7 +8,7 @@ Before proceeding with the installation, please ensure your hardware meets the [
 
 1.  **Connect via SSH:** Access the command line of your device using SSH. Instructions for connecting from Windows, macOS, and Linux are included at the end of the [Preparing Raspberry Pi OS Lite guide](./prepare-raspberry-pi.md#_10-power-on-and-connect).
 
-2.  **Run the Installation Script:** Log in to the Printerhive web application and follow the interactive [Installation Guide](/getting-started/installation_guide). The guide will provide you with a specific command to run on your Raspberry Pi via SSH.
+2.  **Run the Installation Script:** Log in to the Printerhive web application and follow the interactive installation guide. The guide will provide you with a specific command to run on your Raspberry Pi via SSH.
     *   **Recommended Method:** Copy the command directly from the web application's installation guide. This command usually includes your unique API key, simplifying the process.
     *   **Alternative Method:** If you prefer or need to run a generic command, you can use the following. Note that if you use this method, you **will** need to manually provide the API key when prompted (see Step 3).
         ```bash
@@ -18,22 +18,27 @@ Before proceeding with the installation, please ensure your hardware meets the [
 3.  **Provide API Key (If Necessary):**
     *   If you used the **alternative method** in Step 2, the script will prompt you to enter your API key.
     *   **How to find your API key:**
-        *   Log in to your Printerhive account: [https://app.printerhive.com](https://app.printerhive.com)
-        *   Navigate to the **Locations** section.
-        *   Find your location and click the **eye icon** (👁️) next to the API Key to reveal it.
-        *   **Double-click** the revealed API key to select the entire key, then copy it (e.g., using `Ctrl+C` or `Cmd+C`).
-        *   Paste the copied **API key** into the SSH terminal when prompted (e.g., using right-click, `Shift+Insert`, or `Cmd+V`, depending on your terminal) and press Enter.
-    *   If you used the recommended command from the web guide (Step 2), it should already contain the key, and you might not be prompted for it separately.
+        *   Go to [Locations](https://app.printerhive.com/user/locations) in your Printerhive account
+        *   Click the eye icon (👁️) next to your API Key to reveal it
+        *   Copy the key and paste it into the SSH terminal when prompted
+    *   If you used the recommended command (Step 2), the key is already included.
 
-4.  **Wait for Completion:** The installation process is quick and typically completes within 1 minute. Even on slower devices, it should take no more than a few minutes.
+4.  **Wait for Completion:** The installation process is quick. Most time is spent installing Docker and Docker Compose (if not already present). The Printerhive client itself installs almost instantly.
 
-5.  **Installation Complete:** Once the script finishes, the Printerhive client is installed and running. The client will automatically scan the network for Bambu Lab printers and add them to your account (if they are not already present, for example during a fresh installation). If you already have printers in your account, the client will synchronize with the cloud. You can monitor the client status and manage your printers in the Printerhive web application. You can close the SSH connection.
+5.  **Installation Complete:** Once the script finishes, the Printerhive client is installed and running.
+
+    The client will automatically:
+    - Scan your network for Bambu Lab printers
+    - Add newly discovered printers to your account
+    - Synchronize with existing printers in your account
+
+    You can now close the SSH connection and manage your printers through the Printerhive web application.
 
 ## Troubleshooting Installation Issues
 
 The following issues may occur during installation:
 
-*   **Incorrect or invalid API Key:** If you entered the API key manually (using the alternative installation method), ensure you copied it completely and without errors. You can find your API key in the Printerhive web application under the "Locations" section.
+*   **Incorrect or invalid API Key:** If you entered the API key manually (using the alternative installation method), ensure you copied it completely and without errors. You can find your API key at [Locations](https://app.printerhive.com/user/locations).
 *   **Unstable internet connection:** The installation script downloads necessary packages and Docker images. If your internet connection is unstable or slow, a download error may occur, and the installation will fail. Ensure a stable internet connection for the Raspberry Pi throughout the installation.
 *   **Insufficient SD card space:** Make sure you have enough free space on your SD card. Minimum SD card size requirements are listed in the [Hardware Requirements](./hardware-requirements.md) section.
 *   **Permission issues:** The installation script requires `sudo` privileges for some operations. Run the command as instructed, typically with `sudo bash setup.sh`.

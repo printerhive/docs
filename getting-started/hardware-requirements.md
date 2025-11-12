@@ -9,7 +9,7 @@ This page details the specific Raspberry Pi models we support and the essential 
 Printerhive is optimized for the following Raspberry Pi models:
 
 *   **Raspberry Pi 5 (Strongly Recommended):** For the best performance, responsiveness, and future-proofing, we **strongly recommend using a Raspberry Pi 5.** Installation and operation are significantly faster on this model.
-    *   *Example: Printerhive client installation takes approximately 6 minutes on an RPi 5, compared to ~37 minutes on an RPi Zero 2 W with the same SD card.*
+    *   *Note: Most installation time is spent on Docker and Docker Compose setup. The Printerhive client itself installs almost instantly.*
 *   **Raspberry Pi 4 Model B**
 *   **Raspberry Pi 3 Model B / B+**
 *   **Raspberry Pi Zero 2 W** (Suitable for basic use, but an RPi 4 or 5 offers a much better experience for managing multiple printers or more demanding tasks.)
@@ -71,4 +71,8 @@ For the best experience and to ensure you can receive help from our support team
 
 ## Important Printer Configuration Note (Bambu Lab)
 
-To enable full control features with Printerhive (like starting prints and managing print jobs, not just monitoring) for your **Bambu Lab printers**, you **must** set them to **LAN mode** in their network settings. Without LAN mode enabled, Printerhive's capabilities will be limited to monitoring only. 
+To enable full control features with Printerhive for your **Bambu Lab printers**, you **must** set them to **LAN mode** in their network settings. This allows you to start prints, manage print jobs, and monitor your printers. Without LAN mode, only monitoring is available.
+
+:::tip Developer Mode on Newer Firmware
+On newer printer firmware versions, you may also need to enable **Developer Mode** in addition to LAN Mode. Check your printer's settings menu for this option and enable it if available.
+::: 

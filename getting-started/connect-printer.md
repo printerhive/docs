@@ -2,7 +2,7 @@
 
 This guide explains how to add your Bambu Lab printer to your Printerhive account.
 
-**Prerequisite:** Ensure your Bambu Lab printer is turned on, connected to the same Wi-Fi network as your Printerhive client device (e.g., Raspberry Pi), and set to **LAN Mode**.
+**Prerequisite:** Ensure your Bambu Lab printer is turned on, connected to the same Wi-Fi network as your Printerhive client device (e.g., Raspberry Pi), and set to **LAN Mode**. On newer firmware versions, you may also need to enable **Developer Mode** in the printer settings.
 
 **Highly Recommended:** For a stable connection, we strongly advise [setting up a static IP address (IP reservation)](#importance-of-ip-address-reservation-static-ip) for your printer in your router settings *before* adding it to Printerhive or as soon as possible thereafter. This prevents connection issues if your printer's IP address changes.
 
@@ -99,7 +99,7 @@ This code is **case-sensitive**. Verify you have entered it *exactly* as it appe
 While usually not the cause of *connection* issues, ensure the **Serial Number (SN)** is entered correctly for proper printer identification. Double-check it against the printer's screen (Settings -> Device Info) or the sticker on the device.
 
 #### LAN Mode Check
-Confirm your printer is still set to **LAN Mode** in its network settings.
+Confirm your printer is still set to **LAN Mode** in its network settings. On newer firmware versions, also verify that **Developer Mode** is enabled if available.
 
 #### Network Check
 Both the printer and the Printerhive client device (e.g., Raspberry Pi) *must* be on the exact same Wi-Fi/LAN network.
