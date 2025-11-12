@@ -2,7 +2,7 @@
 
 Before setting up your hardware, it's important to verify that your 3D printer is compatible with Printerhive. This page lists all currently supported printers and their specific features.
 
-## Bambu Lab Printers ⭐ Best Support
+## Bambu Lab Printers - Best Support
 **Full integration with all features**
 
 ### Supported Models
@@ -22,9 +22,7 @@ Before setting up your hardware, it's important to verify that your 3D printer i
 - Cross-model compatibility (print P1P files on X1C and vice versa)
 - Full printer control (movement, temperatures, fans, flow rate)
 
----
-
-## Klipper Printers ⭐ Full Support
+## Klipper Printers - Full Support
 **Complete functionality for all Klipper-based printers**
 
 ### Works With
@@ -43,8 +41,6 @@ Before setting up your hardware, it's important to verify that your 3D printer i
 - Complete print history
 - All Printerhive features available
 
----
-
 ## Prusa Printers
 **Basic support for newer models**
 
@@ -62,8 +58,6 @@ Before setting up your hardware, it's important to verify that your 3D printer i
 :::info Enhanced Prusa Support
 Enhanced Prusa support is on our roadmap for future updates.
 :::
-
----
 
 ## Requirements
 
