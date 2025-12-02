@@ -44,6 +44,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           { text: 'Registration', link: '/getting-started/registration' },
           { text: 'Supported Printers', link: '/getting-started/supported-printers' },
           { text: 'Hardware Requirements', link: '/getting-started/hardware-requirements' },
+          { text: 'Pre-installed Raspberry Pi Setup', link: '/getting-started/pre-installed-setup' },
           { text: 'Prepare Raspberry Pi', link: '/getting-started/prepare-raspberry-pi' },
           { text: 'Client Installation', link: '/getting-started/client-installation' },
           { text: 'Connect Printer', link: '/getting-started/connect-printer' }
