@@ -67,7 +67,7 @@ Go to [Locations](https://app.printerhive.com/user/locations) to verify that you
 
 Your printers must be connected to the **same Wi-Fi network** as your Raspberry Pi.
 
-For detailed instructions on connecting your printer, see the [Connect Printer](./connect-printer.md) guide.
+For detailed instructions on connecting your printer, see the [Connect Printer](/getting-started/connect-printer) guide.
 
 ## Troubleshooting
 
