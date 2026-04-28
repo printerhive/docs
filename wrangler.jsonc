@@ -15,7 +15,7 @@
     "dev": {
       "name": "printerhive-docs-dev",
       "routes": [
-        { "pattern": "dev.docs.printerhive.com/*", "zone_name": "printerhive.com" }
+        { "pattern": "dev-docs.printerhive.com/*", "zone_name": "printerhive.com" }
       ]
     }
   }
