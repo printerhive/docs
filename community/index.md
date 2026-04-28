@@ -1,3 +1,7 @@
+---
+description: "Find Printerhive community, Discord, support, feedback, and issue reporting channels."
+---
+
 # Community and Support
 
 We believe in the power of community and strive to provide you with the best possible support. This page outlines the various channels where you can get help, share your experiences, and contribute to Printerhive's development.

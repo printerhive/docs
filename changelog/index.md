@@ -1,3 +1,7 @@
+---
+description: "Printerhive public changelog with product updates, new features, fixes, and workflow improvements."
+---
+
 # Changelog
 
 ## April 28, 2026

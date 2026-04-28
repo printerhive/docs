@@ -1,3 +1,7 @@
+---
+description: "Use Printerhive locations to organize printers, clients, API keys, and multi-site setups."
+---
+
 # Locations
 
 Locations allow you to connect 3D printers from different physical places or distribute a large number of printers across multiple Raspberry Pis for performance reasons.

@@ -3,7 +3,7 @@ import { defineConfig, type DefaultTheme, type TransformContext } from 'vitepres
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Printerhive Docs",
-  description: "Documentation for Printerhive.com",
+  description: "Printerhive documentation for print farm setup, queues, files, filament, orders, integrations, and troubleshooting",
   head: [
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
@@ -30,7 +30,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     siteTitle: false,
 
     nav: [
-      { text: 'Getting Started', link: '/' },
+      { text: 'Start Here', link: '/' },
       { text: 'Features', link: '/features/' },
       { text: 'Changelog', link: '/changelog/' },
       { text: 'Community & Support', link: '/community/' }
@@ -38,59 +38,82 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     
     sidebar: [
       {
-        text: 'Getting Started',
+        text: 'Start Here',
         items: [
-          { text: 'Introduction', link: '/' },
+          { text: 'Overview', link: '/' },
           { text: 'Registration', link: '/getting-started/registration' },
-          { text: 'Supported Printers', link: '/getting-started/supported-printers' },
-          { text: 'Hardware Requirements', link: '/getting-started/hardware-requirements' },
-          { text: 'Prepare Raspberry Pi', link: '/getting-started/prepare-raspberry-pi' },
-          { text: 'Client Installation', link: '/getting-started/client-installation' },
-          { text: 'Connect Printer', link: '/getting-started/connect-printer' }
-        ]
-      },
-      {
-        text: 'Quick Start',
-        items: [
           { text: 'Pre-installed Raspberry Pi', link: '/quick-start/pre-installed-setup' }
         ]
       },
       {
-        text: 'Features',
+        text: 'Printers & Client Setup',
         collapsible: true,
-        collapsed: true,
+        collapsed: false,
         items: [
-          { text: 'Features Overview', link: '/features/' },
-          { text: 'Swap Mod Integration', link: '/features/swap-mod' },
+          { text: 'Supported Printers', link: '/getting-started/supported-printers' },
+          { text: 'Hardware Requirements', link: '/getting-started/hardware-requirements' },
+          { text: 'Prepare Raspberry Pi', link: '/getting-started/prepare-raspberry-pi' },
+          { text: 'Client Installation', link: '/getting-started/client-installation' },
+          { text: 'Connect Printer', link: '/getting-started/connect-printer' },
           { text: 'Basic Printer Control', link: '/features/basic-printer-control' },
-          { text: 'File Management', link: '/features/file-management' },
-          { text: 'Monitoring', link: '/features/monitoring' },
-          { text: 'Locations', link: '/features/locations' },
-          { text: 'Notifications', link: '/features/notifications' },
+          { text: 'Monitoring', link: '/features/monitoring' }
+        ]
+      },
+      {
+        text: 'Printing Workflow',
+        collapsible: true,
+        collapsed: false,
+        items: [
+          { text: 'Print Queues and Jobs', link: '/printing/print-queues-and-jobs' },
           { text: 'Scheduled Prints', link: '/features/scheduled-prints' },
+          { text: 'Swap Mod Integration', link: '/features/swap-mod' },
           { text: 'Lighting Automation', link: '/features/lighting-automation' }
         ]
       },
       {
-        text: 'Guides',
+        text: 'Files & Plates',
         collapsible: true,
-        collapsed: true,
+        collapsed: false,
         items: [
-          { text: 'Bambu Lab Factory Reset', link: '/guides/bambu-lab-factory-reset' },
-          { text: 'Activating Camera for X1 & H2D', link: '/guides/activating-camera-bambu-lab-x1-h2d' },
-          { text: 'Changing Wi-Fi Configuration on Raspberry Pi', link: '/guides/change-rpi-wifi' }
+          { text: 'Files, Plates, and OrcaSlicer', link: '/files/files-plates-orcaslicer' },
+          { text: 'File Management', link: '/features/file-management' }
         ]
       },
       {
-        text: 'Troubleshooting',
+        text: 'Filament & AMS',
+        collapsible: true,
+        collapsed: false,
         items: [
-          { text: 'Common Issues', link: '/troubleshooting/' }
+          { text: 'Filament Storage and AMS', link: '/filament/filament-storage-and-ams' }
         ]
       },
       {
-        text: 'Community & Support',
+        text: 'Orders & Production',
+        collapsible: true,
+        collapsed: false,
         items: [
-          { text: 'Help & Feedback', link: '/community/' }
+          { text: 'Orders, Products, and Projects', link: '/production/orders-products-projects' },
+          { text: 'Print Calculator', link: '/calculator/print-calculator' }
+        ]
+      },
+      {
+        text: 'Integrations',
+        collapsible: true,
+        collapsed: false,
+        items: [
+          { text: 'E-commerce Integrations', link: '/integrations/ecommerce-integrations' },
+          { text: 'Notifications', link: '/features/notifications' },
+          { text: 'Locations', link: '/features/locations' }
+        ]
+      },
+      {
+        text: 'Account & Support',
+        collapsible: true,
+        collapsed: false,
+        items: [
+          { text: 'Account and Security', link: '/account/account-security' },
+          { text: 'Troubleshooting', link: '/troubleshooting/' },
+          { text: 'Community & Support', link: '/community/' }
         ]
       },
       {

@@ -1,3 +1,7 @@
+---
+description: "Change Wi-Fi configuration on a Raspberry Pi running the Printerhive client."
+---
+
 # Changing Wi-Fi Configuration on Raspberry Pi
 
 If you need to change the Wi-Fi network your Raspberry Pi is connected to after installing the Printerhive client, follow these steps. This is relevant if, for example, you change your Wi-Fi router, Wi-Fi password, or move the Raspberry Pi to a different network.

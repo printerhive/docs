@@ -1,10 +1,30 @@
+---
+description: "Manage uploaded print files, folders, tags, plates, metadata, and production links in Printerhive."
+---
+
 # File Management
 
-Printerhive provides tools to manage your G-code files directly within the web interface.
+Printerhive provides a shared file library for print files. Use it to store files once and reuse them for printers, products, projects, and orders.
 
-## Key Features:
+## Key features
 
-*   **File Uploads:** Upload your sliced G-code files to Printerhive for printing. The system supports robust multiple file uploads.
-*   **Browsing:** Navigate through your uploaded files and folders easily. The interface is optimized for both desktop and mobile devices.
-*   **Organization:** Create folders to keep your print files organized.
-*   **Sorting:** Basic column sorting is available in the file manager view. Click on column headers (like Name, Date, Size) to sort the files. Your sorting preference is saved per folder within your browser session.
+- **Uploads:** upload G-code and 3MF files to Printerhive.
+- **Folders:** organize files into folders and subfolders.
+- **Search:** search in the current folder or across the whole library.
+- **Tags:** mark files by material, customer, printer type, or production status.
+- **Plate view:** inspect plates inside supported files.
+- **Metadata:** review duration, weight, filament, nozzle, and printer compatibility when available.
+- **Production links:** attach files or plates to products, projects, and order items.
+
+## Recommended workflow
+
+1. Upload the file once.
+2. Put it into a clear folder.
+3. Add useful tags.
+4. Open the file and review plates.
+5. Send the right plate to a queue or attach it to a product/project.
+6. Reuse the same file instead of uploading duplicates.
+
+## Related pages
+
+For the full workflow, see [Files, Plates, and OrcaSlicer](/files/files-plates-orcaslicer).

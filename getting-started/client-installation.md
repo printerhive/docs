@@ -1,3 +1,7 @@
+---
+description: "Install the Printerhive client on Raspberry Pi or another Docker-capable device and troubleshoot setup issues."
+---
+
 # Client Installation
 
 Before proceeding with the installation, please ensure your hardware meets the [Hardware Requirements](./hardware-requirements.md) and that you have prepared your Raspberry Pi device following the [Prepare Raspberry Pi](./prepare-raspberry-pi.md) guide.
