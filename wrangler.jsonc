@@ -1,0 +1,22 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "printerhive-docs",
+  "account_id": "ad8270400a00752b9bd8af7323ed0d29",
+  "compatibility_date": "2026-04-28",
+  "assets": {
+    "directory": "./.vitepress/dist",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  },
+  "routes": [
+    { "pattern": "docs.printerhive.com/*", "zone_name": "printerhive.com" }
+  ],
+  "env": {
+    "dev": {
+      "name": "printerhive-docs-dev",
+      "routes": [
+        { "pattern": "dev-docs.printerhive.com/*", "zone_name": "printerhive.com" }
+      ]
+    }
+  }
+}

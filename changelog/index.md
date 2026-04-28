@@ -1,5 +1,290 @@
 # Changelog
 
+## April 28, 2026
+
+*   **Stream and print monitoring:**
+    *   **Stream printer assignment:** Added support for assigning printers to streams, making stream-based monitoring and control easier to organize.
+    *   **Stream controls:** Improved stream player controls and statistics for internal monitoring and debugging.
+
+*   **Order and product workflow:**
+    *   **Product variants:** Added product variant handling for order items, so imported or manually prepared items can represent different versions more accurately.
+    *   **Upgates public docs:** Added public Upgates connection and feature pages to help shops understand what the integration can do.
+
+*   **Print start reliability:**
+    *   **Start throttling:** Added throttling for print-start commands per user, reducing accidental duplicate starts and making queue processing safer.
+    *   **Printer eligibility:** Improved printer eligibility checks so jobs are matched to compatible printers more reliably.
+    *   **Filament mismatch warnings:** Added clearer warnings for filament mismatches, with user settings to control confirmation before printing.
+
+## April 22, 2026
+
+*   **Account & device security:**
+    *   **Active sessions:** You can now see active sign-in sessions in settings, including location, IP address, and last activity.
+    *   **Device names:** Devices can be named, making it easier to recognize where you are signed in.
+    *   **Remote sign-out:** Sessions you no longer use can be signed out directly from settings.
+    *   **New device emails:** Optional email notifications can alert you when a new device signs in.
+
+*   **Default print options:**
+    *   **Global defaults:** Save default print options for all printers.
+    *   **Printer-specific defaults:** Keep separate defaults for individual printers, so switching printers restores the right setup for that machine.
+
+*   **File and queue fixes:**
+    *   **More reliable uploads:** The upload button now opens the file picker and upload window more consistently.
+    *   **Print job editing:** Switching printers while editing a print job now keeps the configuration in sync.
+    *   **Bulk actions:** “Select all” in the queue now respects the active printer type filter, so bulk moves and deletions only affect visible items.
+
+*   **Bambu Lab improvements:**
+    *   **Smoother print starts:** Improved handling of bed leveling, preheating, and prints started from history.
+    *   **X2D support:** Printerhive now recognizes Bambu Lab X2D and prepares the right controls, nozzle details, and dual-nozzle options.
+
+## April 15, 2026
+
+*   **Custom print queues:**
+    *   **Named queues:** Create your own queues, switch between them, and move selected jobs into the right queue.
+    *   **Order and batch organization:** When sending a whole project or product to print, it is easier to separate work by order, batch, or priority.
+
+*   **Less manual cleanup:**
+    *   **Auto-delete finished order queues:** Queues created from orders can now be removed automatically once the last print finishes.
+
+*   **Upgates integration:**
+    *   **Product import:** Connected Upgates stores can import products directly into Printerhive, including an import summary.
+
+*   **Smarter printer selection:**
+    *   **Better matching:** Printerhive now gives more weight to nozzle size, filament, and color matches when choosing a printer for queued jobs.
+
+*   **Reliability and mobile layout:**
+    *   **Bambu Lab progress:** Improved how incomplete printer progress updates are handled.
+    *   **iPhone layout:** Adjusted mobile layout so content does not slip under the top system bar.
+
+## April 8, 2026
+
+*   **Safari and iPhone fixes:**
+    *   **Startup crashes fixed:** Printerhive now avoids browser APIs that Safari does not support, fixing startup issues on iPhone and Mac.
+
+*   **E-commerce work:**
+    *   **WooCommerce and Phillibert:** Improved order integration workflows, including simple webhooks for incoming orders.
+    *   **Upcoming integrations:** Continued work on Shopify and Upgates support.
+
+*   **Performance work:**
+    *   Ongoing performance improvements to make the app more stable and reliable.
+
+## April 1, 2026
+
+*   **Files directly in projects and products:**
+    *   **File picker:** Add files to project/product items directly from your file library.
+    *   **Folder navigation:** Browse folders, search files, filter by tags, and select specific plates from a file.
+    *   **Fast item creation:** Assign selected files to an existing item or create a new item immediately.
+
+*   **AMS and filament improvements:**
+    *   **AMS QR labels:** Fixed scanning for AMS slot QR labels and filament tray labels.
+    *   **Low filament warnings:** Printer cards now show a warning when the selected spool does not have enough filament for the print, including exact remaining and required amounts.
+
+*   **Bambu Lab H2S:**
+    *   Fixed calibration options for bed leveling, vibration, and nozzle calibration.
+
+*   **UI improvements:**
+    *   Improved filament selector behavior while scrolling.
+    *   Improved printer detail sidebar behavior on smaller screens.
+    *   Fixed several dark mode issues.
+
+## March 25, 2026
+
+*   **WooCommerce integration:**
+    *   Connect a WooCommerce store in account settings and let Printerhive process incoming orders automatically.
+
+*   **Bambu Lab filament calibration:**
+    *   **K-factor:** Set a K-factor when assigning filament to an AMS tray or virtual slot. The value is saved to the spool and pre-filled next time.
+
+*   **File manager performance:**
+    *   **Cached plate previews:** Plate images are cached on the server, making large file libraries faster to browse.
+
+*   **Filament storage fixes:**
+    *   The “Clear filters” button now reliably resets all filters at once.
+    *   Fixed an issue where a missing filament color in an AMS tray could prevent a print job from starting.
+
+*   **Bambu Lab error messages:**
+    *   HMS error codes now have clearer and more accurate translations.
+
+## March 11, 2026
+
+*   **QR labels:**
+    *   **Printer slot labels:** Label templates now support AMS and external feeder slots, including printer name and slot number.
+    *   **Faster scanning:** The QR scanner starts directly without an extra camera prompt on mobile devices.
+
+*   **Filament storage:**
+    *   Fixed the “Labels not printed” filter so it only shows spools without printed labels.
+    *   Redesigned filters with a cleaner layout.
+    *   Low-stock alerts now appear above filters for better visibility.
+
+*   **Email preferences:**
+    *   Broadcast emails now include unsubscribe links, including one-click unsubscribe support in modern email clients.
+
+*   **File detail fix:**
+    *   Fixed a crash on the file detail page when a filament had no material type set.
+
+## March 5, 2026
+
+*   **QR labels:**
+    *   Spool QR codes now use a stable printer/AMS/tray position format instead of an internal identifier, so labels keep working after moving spools or swapping AMS units.
+
+*   **Automatic mapping:**
+    *   Custom spools are now recognized correctly when matching AMS trays to print jobs.
+
+*   **Mobile layout:**
+    *   Printer cards on the print page display better on smaller screens.
+    *   Filament mapping is clearer and spool names are less repetitive.
+
+*   **Print queue stability:**
+    *   Invalid queued jobs are skipped automatically so the rest of the queue can continue.
+
+*   **Ticket privacy:**
+    *   Internal ticket notes are now visible only to administrators.
+
+## February 19, 2026
+
+*   **Transfer progress:**
+    *   Upload and download progress now shows the file name and target printer directly in a compact floating panel.
+    *   Multiple simultaneous transfers are easier to tell apart.
+
+*   **Bambu Lab print jobs:**
+    *   Fixed cases where one Bambu Lab print could appear as multiple active jobs.
+
+*   **PrusaSlicer files:**
+    *   Improved recognition of GCode files exported from PrusaSlicer with generic Prusa profiles.
+
+## February 12, 2026
+
+*   **Registration protection:**
+    *   Added CAPTCHA, IP-based rate limiting, and bot-detection checks to reduce automated registrations.
+
+*   **Printer communication:**
+    *   Improved WebSocket handling and scheduler reliability.
+
+*   **Print workflow fixes:**
+    *   Continued fixes around queue handling and status updates.
+
+## January 2026
+
+*   **Filament and spool workflow:**
+    *   Added QR label editing for spools.
+    *   Improved filament deduction for virtual trays and single-nozzle printers.
+    *   Added support for reloading AMS filament deduction after changes.
+
+*   **Print preparation:**
+    *   Added skip-object support before printing.
+    *   Improved estimated time display in the queue.
+    *   Improved handling of long file names and checksum checks.
+
+*   **Account emails:**
+    *   Added improved registration and password reset emails.
+
+*   **Bambu Lab errors:**
+    *   Added more HMS error translations and troubleshooting messages.
+
+*   **Storage reliability:**
+    *   Continued work on S3 storage and local backup handling.
+
+## December 2025
+
+*   **Filament storage:**
+    *   Introduced early filament storage workflows for testers and continued improving filtering and selection.
+    *   Redesigned the filament selector for easier mapping before print.
+
+*   **AMS and printer controls:**
+    *   Added AMS control improvements and more nozzle options.
+    *   Added H2C printer support.
+
+*   **File management:**
+    *   Improved folder renaming and ordering.
+    *   Added expanded plate details in file views.
+
+*   **Login and campaigns:**
+    *   Added Apple sign-in work and email campaign support.
+
+*   **Order data:**
+    *   Added EAN and invoice-related information to order items and product/order workflows.
+
+## November 2025
+
+*   **Pricing and production planning:**
+    *   Added a price calculator and related usage statistics.
+    *   Added a Bill of Materials workflow for products and plates.
+
+*   **User and public profiles:**
+    *   Added user profile improvements and public profile/banner support.
+
+*   **Files and print history:**
+    *   Added previews to print history in file detail views.
+    *   Saved column visibility and sorting preferences in file views.
+    *   Fixed file upload and duplicate print job issues.
+
+*   **Prusa and Klipper support:**
+    *   Improved Prusa uploads, local PrusaLink support for older devices, and model detection.
+
+*   **Shop and order integrations:**
+    *   Added Phillibert extension logic and improved access rights around shop orders.
+
+## October 2025
+
+*   **Ticketing:**
+    *   Added and expanded the support ticket system, including internal notes and attachments.
+
+*   **Print and file management:**
+    *   Added file and directory renaming improvements.
+    *   Added printer and print history statistics.
+    *   Improved reprint, skip-object, and deleted-printer/deleted-file handling.
+
+*   **Printer support:**
+    *   Added support and controls for newer Bambu Lab models including P2S.
+    *   Added chamber temperature and chamber control improvements.
+    *   Improved AMS handling and calibration support.
+
+*   **Streaming and API work:**
+    *   Added early streaming features.
+    *   Expanded API work for integrations and advanced plans.
+
+*   **Interface improvements:**
+    *   Added configurable printer card display and quick actions.
+    *   Improved admin ticket views and basic diagnostics.
+
+## September 2025
+
+*   **Projects, products, and order items:**
+    *   Added the first project/product workflows and order item printing flows.
+    *   Added direct print and “add all to queue” actions from order items.
+    *   Improved project tabs and order item details.
+
+*   **YOLO / automatic queue mode:**
+    *   Added early automatic queue logic for choosing suitable printers and plates.
+    *   Improved filament and AMS matching for automatic printing.
+
+*   **Shopify integration:**
+    *   Added the Shopify app, shop connection flow, and order processing work.
+    *   Improved Shopify webhooks and fallback order handling.
+
+*   **Prusa support:**
+    *   Added Prusa printer support, status handling, RTSP work, and file compatibility improvements.
+
+*   **Storage and performance:**
+    *   Added S3-based file storage work and Redis caching improvements.
+
+*   **Camera support:**
+    *   Added camera-related functionality for printer monitoring.
+
+## August 2025
+
+*   **Klipper improvements:**
+    *   Improved Klipper file handling, offline handling, restart controls, firmware restart, Z-offset, shutdown, and startup actions.
+
+*   **Swap Mod and plate selection:**
+    *   Added automatic build plate selection and improved Swap Mod handling for A1 and A1 mini workflows.
+
+*   **Jobox support:**
+    *   Added initial Jobox-related support.
+
+*   **Printer communication:**
+    *   Improved client connection handling so older clients are kicked when a new one connects.
+    *   Improved upload status tracking between Printerhive, client, and printer.
+
 ## August 6, 2025
 
 *   **Core Improvements:**
