@@ -1,15 +1,19 @@
 {
   "devDependencies": {
     "qrcode": "^1.5.4",
-    "vitepress": "^1.6.4"
+    "vitepress": "^1.6.4",
+    "wrangler": "^4.85.0"
   },
   "scripts": {
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
-    "docs:preview": "vitepress preview"
+    "docs:preview": "vitepress preview",
+    "deploy": "npm run docs:build && wrangler deploy",
+    "deploy:dev": "npm run docs:build && wrangler deploy --env dev"
   },
   "overrides": {
     "esbuild": "^0.25.8",
+    "postcss": "^8.5.10",
     "rollup": "^4.59.0",
     "vite": "^6.4.2"
   }
