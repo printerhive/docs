@@ -1,31 +1,49 @@
+---
+description: "Monitor printer status, progress, temperatures, camera streams, AMS data, and alerts in Printerhive."
+---
+
 # Monitoring
 
-Printerhive offers robust real-time monitoring for all your connected 3D printers, allowing you to stay informed about their status and print progress from anywhere.
+Printerhive lets you monitor connected printers from one dashboard. This is useful for both small farms and larger production setups where checking every printer manually wastes time.
 
-## Key Monitoring Capabilities
+## What you can monitor
 
-Printerhive provides a comprehensive suite of monitoring tools, including:
+Available data depends on printer type, firmware, and client connection, but may include:
 
-*   **Live Temperature Tracking:** Monitor print head and bed temperatures in real-time.
-*   **Detailed Print Progress:** Keep track of the current layer, overall progress percentage, estimated remaining time (if provided by the printer), and material consumption.
-*   **Printer Status Updates:** See the current operational status of each printer (e.g., printing, idle, error, offline).
-*   **Camera Feeds:** View live video streams from your printer's camera (if available and configured). Refer to guides like [Activating Camera for Bambu Lab X1 & H2D](/guides/activating-camera-bambu-lab-x1-h2d.md) for specific setups.
-*   **Error and Issue Alerts:** Receive notifications for printer errors or issues that require attention. (See [Notifications](/features/notifications.md) for more details on setting up alerts).
-*   **AMS / Material Monitoring:** For printers with Automatic Material Systems (AMS), monitor the status of individual filament slots, including type, color, and remaining amount (if supported by the printer and AMS version).
+- current printer state,
+- active print job,
+- progress percentage,
+- remaining time,
+- nozzle and bed temperatures,
+- camera stream,
+- AMS tray information,
+- selected filament,
+- printer errors and warnings,
+- print history.
 
-## Accessing Monitoring Information
+## Where to check status
 
-You can access printer monitoring data in several convenient locations within the Printerhive application:
+Use these views:
 
-1.  **Main Dashboard:** Get an at-a-glance overview of all connected printers, their current status, and key print information.
-2.  **Printer Detail View:** Select a specific printer to see its detailed monitoring page, including temperature graphs, full print job details, and camera feed.
-3.  **Mobile Accessibility:** Printerhive is designed to be responsive, allowing you to monitor your printers effectively from desktop, tablet, or mobile devices.
+1. **Printer dashboard:** overview of all connected printers.
+2. **Printer detail:** deeper status, controls, camera, macros, and printer-specific options.
+3. **Print queue:** current work, waiting jobs, stuck jobs, and history.
+4. **Mobile view:** quick check from a phone or tablet.
 
-## Camera Integration for Visual Monitoring
+## Camera monitoring
 
-Visual monitoring is a key aspect of managing a print farm remotely. Printerhive supports:
+Camera support depends on the printer. For Bambu Lab X1 and H2D camera setup, see [Activating Camera for Bambu Lab X1 & H2D](/guides/activating-camera-bambu-lab-x1-h2d).
 
-*   **Integrated Camera Feeds:** Direct display of camera streams from compatible printers (e.g., Bambu Lab printers with LAN mode camera streaming enabled).
-*   **Future Enhancements:** We are continuously working on expanding camera compatibility and features, such as potential support for IP cameras or time-lapse recordings. Stay tuned to our [Changelog](/changelog/) for updates.
+If the camera does not work, first check whether the printer supports LAN camera streaming and whether the relevant printer setting is enabled.
 
-_(Note: Specific monitoring features and their availability may depend on the printer model, its firmware, and your Printerhive plan.)_ 
+## AMS and filament monitoring
+
+For printers with AMS or similar systems, Printerhive can show material and tray information. This helps prevent wrong material or wrong color before a job starts.
+
+For filament workflow, see [Filament Storage and AMS](/filament/filament-storage-and-ams).
+
+## Alerts and notifications
+
+Monitoring becomes more useful when paired with notifications. Use notifications for events that need action, not for every small status change.
+
+See [Notifications](/features/notifications).

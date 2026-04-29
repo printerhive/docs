@@ -1,3 +1,7 @@
+---
+description: "Connect Bambu Lab, Klipper, or Prusa printers to Printerhive manually and troubleshoot IP, access code, and LAN mode issues."
+---
+
 # Connecting Your Printer Manually
 
 This guide explains how to add your Bambu Lab printer to your Printerhive account.

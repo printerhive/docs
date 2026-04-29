@@ -1,3 +1,7 @@
+---
+description: "Create a Printerhive account, confirm terms, and start the initial setup workflow."
+---
+
 # Account Registration
 
 Registering an account on Printerhive is the first step to start managing your printers.

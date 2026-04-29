@@ -1,3 +1,7 @@
+---
+description: "Set up a pre-installed Printerhive Raspberry Pi package, scan the QR code, and connect printers."
+---
+
 # Pre-installed Raspberry Pi Setup
 
 This guide is for customers who purchased a Raspberry Pi with the PrinterHive client pre-installed. Your device comes ready to use with the client software and your account API key already configured.

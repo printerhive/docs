@@ -1,3 +1,7 @@
+---
+description: "Configure Printerhive notifications for printer events, AMS changes, print states, and account activity."
+---
+
 # Notifications
 
 Printerhive features a comprehensive notification system to keep you informed about your printer's activity and important events.

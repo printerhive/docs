@@ -1,3 +1,7 @@
+---
+description: "Hardware requirements for running the Printerhive client on Raspberry Pi or another Docker-capable device."
+---
+
 # Hardware Requirements for Printerhive Client
 
 The Printerhive client application **requires a dedicated, supported Raspberry Pi device** to operate. This device acts as the local hub for managing your 3D printers, ensuring secure and reliable communication within your network.

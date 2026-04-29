@@ -1,26 +1,31 @@
+---
+description: "Supported Bambu Lab, Klipper, and Prusa printers, feature differences, LAN mode requirements, and client network requirements."
+---
+
 # Supported Printers
 
 Before setting up your hardware, it's important to verify that your 3D printer is compatible with Printerhive. This page lists all currently supported printers and their specific features.
 
 ## Bambu Lab Printers - Best Support
-**Full integration with all features**
+**Best supported printer family in Printerhive**
 
 ### Supported Models
 - X1 Series (X1, X1C, X1E)
+- X2D
 - P1 Series (P1P, P1S)
 - P2S
 - A1 Series (A1, A1 mini)
 - H2 Series (H2D, H2S)
 
 ### Features
-- Complete AMS integration (Lite, 2 PRO, HT) with automatic filament selection and color matching
-- Real-time camera streams
-- Skip objects during print (LAN mode only - unique feature)
-- All calibration types accessible remotely
-- Live printer status with 49 different states (heating, leveling, etc.)
-- Multi-hotend support (H2D, H2S)
-- Cross-model compatibility (print P1P files on X1C and vice versa)
-- Full printer control (movement, temperatures, fans, flow rate)
+- AMS integration, including tray/material/color information where available
+- Real-time status, temperatures, and print progress
+- Camera streams on supported models and firmware
+- Skip objects during print where supported by the printer and LAN workflow
+- Remote calibration and printer control actions where supported
+- Multi-hotend / dual-nozzle handling for supported models such as H2D/H2S/X2D
+- Printer matching based on model, nozzle, filament, and job requirements
+- Full production workflow with files, queues, history, products, projects, and orders
 
 ## Klipper Printers - Full Support
 **Complete functionality for all Klipper-based printers**

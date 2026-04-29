@@ -1,5 +1,11 @@
+---
+description: "Use Printerhive automation features for printer-related actions such as lighting workflows where supported."
+---
+
 # Lighting Automation
 
-Printerhive includes a feature to automatically turn off your printer's light upon print completion. This helps save energy and prevents printers from remaining illuminated when idle.
+Lighting automation is one of the automation workflows that can support printer monitoring and camera visibility.
 
-You can configure this setting under **Settings -> Automation -> Turn off lights after printing**. 
+Use it when lights should react to printer activity, for example when a print starts, finishes, or needs better camera visibility.
+
+Feature availability depends on your setup and connected devices. If you use lighting mainly for monitoring, also review [Monitoring](/features/monitoring) and [Notifications](/features/notifications).

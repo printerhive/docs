@@ -1,3 +1,7 @@
+---
+description: "Prepare Raspberry Pi OS Lite for the Printerhive client using Raspberry Pi Imager and SSH."
+---
+
 # Preparing Raspberry Pi OS Lite
 
 Before installing the Printerhive client, you need a working Raspberry Pi with Raspberry Pi OS Lite installed. This guide shows how to use the official Raspberry Pi Imager tool.

@@ -1,3 +1,7 @@
+---
+description: "Enable LAN liveview and troubleshoot camera support for Bambu Lab X1 and H2D printers in Printerhive."
+---
+
 # Activating Camera for Bambu Lab X1 & H2D in Printerhive
 
 To view the live camera feed from your Bambu Lab X1 or H2D series printers within Printerhive, a specific setting needs to be enabled on the printer itself. This guide will walk you through the necessary steps, focusing on the crucial "LAN Only Liveview" option.

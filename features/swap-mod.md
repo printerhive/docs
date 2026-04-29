@@ -1,3 +1,7 @@
+---
+description: "Use Swap Mod hardware with Printerhive workflows for compatible Bambu Lab A1 mini setups."
+---
+
 # Swap Mod with Printerhive
 
 This page describes how Printerhive integrates with the third-party "Swap Mod" hardware add-on for the Bambu Lab A1 Mini, enabling automated sequential multi-plate printing.
