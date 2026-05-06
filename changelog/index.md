@@ -4,6 +4,17 @@ description: "Printerhive public changelog with product updates, new features, f
 
 # Changelog
 
+## May 6, 2026
+
+*   **Upgates integration reliability:**
+    *   **Safer product imports:** Upgates product imports now run one at a time per store, with a short cooldown between runs. The import button shows clear availability hints and is disabled while an import is already running.
+    *   **More stable order imports:** Upgates order webhooks are processed more safely when Upgates sends create and update events together, reducing duplicate or conflicting order imports.
+    *   **Cleaner webhook management:** Printerhive now avoids creating duplicate Upgates webhooks where possible and removes its order webhook when an Upgates connection is uninstalled.
+
+*   **E-shop workflow:**
+    *   **Clearer navigation:** Orders, products, and CSV configurations are now grouped under a single E-shop menu section.
+    *   **CSV configuration fixes:** Saving and deleting CSV export configurations is more reliable, especially when changes are made repeatedly or close together.
+
 ## April 28, 2026
 
 *   **Stream and print monitoring:**
