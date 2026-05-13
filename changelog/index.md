@@ -4,6 +4,15 @@ description: "Printerhive public changelog with product updates, new features, f
 
 # Changelog
 
+## May 13, 2026
+
+*   **Upgates connection reliability:**
+    *   **Faster add-on setup:** Connecting a new Upgates store now finishes faster and is less likely to time out, even when follow-up setup work takes longer in the background.
+    *   **More reliable store opening:** Opening Printerhive from Upgates now handles temporary validation or setup problems more gracefully, so users get a clearer result instead of a failed connection flow.
+
+*   **Imported order accuracy:**
+    *   **Correct item prices:** Upgates order items now use per-piece pricing when multiple units are ordered, keeping imported line items and totals consistent in Printerhive.
+
 ## May 6, 2026
 
 *   **Upgates integration reliability:**
