@@ -4,6 +4,24 @@ description: "Printerhive public changelog with product updates, new features, f
 
 # Changelog
 
+## May 20, 2026
+
+*   **Printer loan sharing:**
+    *   **Shareable loan links:** Added a guided setup for sharing a printer with visitors, including a public link, password protection, expiry, print-count limits, filament limits, and free or priced usage display.
+    *   **Visitor print flow:** Visitors can upload a sliced 3MF file, see print pricing, map file materials to loaded AMS slots, and continue through the loan portal without a full Printerhive account.
+    *   **Filament requests:** If the right material is not loaded, visitors can request specific spools from the owner’s inventory. Owners see pending requests on the printer page and can confirm once the spools are mounted.
+    *   **Packeta shipping options:** Loan links can now offer Packeta/Zásilkovna pickup-point delivery, including optional cash-on-delivery settings.
+
+*   **Payments and payouts:**
+    *   **Stripe payouts:** Added Stripe Connect setup in account settings, so printer owners can connect Stripe, track onboarding status, open the Stripe dashboard, and receive payments for printer loans.
+    *   **Clearer settings layout:** Account settings are now grouped by topic, including payments, security, printing, and operations, making loan and shipping setup easier to find.
+
+*   **Order workflow:**
+    *   **Better order table controls:** Imported orders now use a searchable and sortable table with built-in paging, clearer date and price sorting, and shift-click selection for bulk printing or CSV export.
+
+*   **Print dialog reliability:**
+    *   **Normal filament picker restored:** The regular print flow now shows all available AMS slots again, while loan-specific material filtering stays limited to the loan portal.
+
 ## May 13, 2026
 
 *   **Upgates connection reliability:**
