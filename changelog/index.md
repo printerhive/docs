@@ -4,6 +4,32 @@ description: "Printerhive public changelog with product updates, new features, f
 
 # Changelog
 
+## May 27, 2026
+
+*   **Shopify integration:**
+    *   **Embedded Shopify app:** Printerhive can now open directly inside Shopify Admin, with a smoother connection flow and clearer guidance when a store must be managed or uninstalled from Shopify.
+    *   **More reliable order sync:** Shopify orders are now synced through Printerhive’s main integration flow, including order webhooks, safer updates to existing orders, and fixes for duplicate line items.
+    *   **Shipping support:** Added Packeta shipping support for platform and shop workflows, including clearer settings for connected stores.
+
+*   **Print calculator:**
+    *   **Import models from links:** The print calculator can now load model files from supported public model URLs, making it faster to price jobs without manually downloading and uploading files first.
+    *   **More stable recalculation:** URL-imported models now stay available across quantity changes and recalculations, reducing failed or lost calculator sessions.
+
+*   **Customer and order management:**
+    *   **CRM contacts:** Added customer profiles with linked orders, products, contact details, and timeline-style views for managing customer work in one place.
+    *   **Manual order improvements:** Creating orders from saved customer products now supports quantity selection and improved pricing handling.
+    *   **Contact totals:** Contact lists now show total customer spend for quicker prioritization.
+
+*   **Printer loan portal:**
+    *   **Safer guest uploads:** Loan portal uploads now include G-code safety review to catch risky print instructions before a guest starts a job.
+    *   **Better guest experience:** Improved printer status, camera monitoring, expired-link messages, Packeta pickup selection, shipping charges, and access to monitoring after a print limit is reached.
+    *   **Owner visibility:** Loan print jobs are easier to see from the printer dashboard and detail pages, with better current-loan and ledger views.
+
+*   **Files, mobile UI, and monitoring:**
+    *   **File manager polish:** Folder creation now uses a cleaner modal flow, and uploads have a clearer layout.
+    *   **Mobile fixes:** Modals, sidebars, safe areas, and the theme toggle behave better on smaller screens.
+    *   **Printer cards and previews:** Printer cards can show camera information, and public print job previews are easier to use on mobile.
+
 ## May 20, 2026
 
 *   **Printer loan sharing:**
