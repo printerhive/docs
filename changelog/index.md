@@ -4,6 +4,35 @@ description: "Printerhive public changelog with product updates, new features, f
 
 # Changelog
 
+## June 3, 2026
+
+*   **Klipper and MMU support:**
+    *   **Better Happy Hare MMU updates:** Klipper printers can now report MMU gate data to Printerhive, so AMS-style slot and spool information stays more accurate.
+    *   **More reliable Klipper file handling:** G-code files received from Klipper are now stored like regular uploads, including cloud storage paths and checksums for smoother file sync.
+    *   **Improved filament metadata:** Multi-material Klipper files now keep filament slot, color, weight, and length information more reliably, with safer fallback matching when a material is not found.
+    *   **Cleaner AMS display:** AMS humidity is hidden when a Klipper printer has no humidity sensor data, avoiding confusing empty readings.
+
+*   **Files, printing, and mobile UI:**
+    *   **Refreshed file detail pages:** File and plate detail views now use a cleaner layout with improved plate actions, material details, and print controls.
+    *   **Bulk file moves:** Selected files can now be moved to another folder directly from My Hive.
+    *   **Print job controls:** Print history actions are more reliable, including reprint and add-to-queue controls for completed jobs.
+    *   **Mobile skip-object fix:** The skip-objects dialog now has a visible Save button and better scrolling on small screens.
+    *   **Sidebar menu fix:** File action menus now open correctly even when the main sidebar is minimized.
+
+*   **Filament and printer visibility:**
+    *   **Loaded spool location:** Filament storage now shows which printer and AMS slot each loaded spool is in, including pending RFID loads.
+    *   **Better Klipper filament mapping:** Klipper print setup handles slicer filament positions more accurately when matching model materials to printer slots.
+
+*   **Shopify and e-shop workflow:**
+    *   **Shopify billing flow:** Shopify App Store installs now use Shopify-managed billing, while existing eligible Printerhive users keep their current access path.
+    *   **App Store review readiness:** Added demo account provisioning and Shopify marketing assets to support the public Shopify app listing.
+    *   **Refreshed e-shop pages:** Orders, products, projects, contacts, and Packeta shipment tools received cleaner list and detail layouts.
+
+*   **Support and feedback:**
+    *   **Feature request notifications:** When a feature request is marked as implemented, the author and users who upvoted it can be notified by email.
+    *   **Clearer feature request status:** Implemented ideas now show their completed status and close voting cleanly.
+    *   **Support UI polish:** The floating support chat bubble and ticket, inbox, and feature-request pages received cleaner layouts.
+
 ## May 27, 2026
 
 *   **Shopify integration:**
