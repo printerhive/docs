@@ -4,6 +4,26 @@ description: "Printerhive public changelog with product updates, new features, f
 
 # Changelog
 
+## June 10, 2026
+
+*   **STL files and slicing:**
+    *   **STL preview pages:** STL files in My Files can now open on a dedicated detail page with an interactive 3D preview.
+    *   **Slice STL models from Printerhive:** STL files can now be sliced with OrcaSlicer and imported back into the same folder as printable files.
+    *   **More reliable slicing:** STL slicing now handles missing file extensions, printer profile matching, plate preview images, and headless OrcaSlicer stability more reliably.
+
+*   **Files and mobile printing:**
+    *   **Drag-and-drop uploads:** Files can now be dropped directly onto My Files folders, using the same upload flow as the manual upload button.
+    *   **Better mobile file details:** Print file detail pages have improved spacing, safer mobile layout, and a cleaner fixed print action bar on small screens.
+
+*   **Printer and AMS support:**
+    *   **Bambu Lab A2L support:** Printerhive now recognizes Bambu Lab A2L printers, including model-specific bed size, OrcaSlicer profiles, serial-number validation, and supported print options.
+    *   **New AMS Lite variant handling:** Newer AMS Lite reports are now parsed safely, reducing failed printer updates for supported Bambu Lab setups.
+    *   **Clearer filament slot visuals:** Sliced-filament AMS slot indicators now match the main AMS tray style more closely, making filled and empty slots easier to distinguish.
+
+*   **Location and client management:**
+    *   **Redesigned locations page:** Locations now use a clearer card layout with client version, storage usage, printer count, API key controls, and update or restart actions.
+    *   **Client version management:** The current client version can now be managed from Admin Hub, with better visibility into outdated client installations.
+
 ## June 3, 2026
 
 *   **Klipper and MMU support:**
