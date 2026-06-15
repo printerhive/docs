@@ -4,6 +4,11 @@ import { defineConfig, type DefaultTheme, type TransformContext } from 'vitepres
 export default defineConfig({
   title: "Printerhive Docs",
   description: "Printerhive documentation for print farm setup, queues, files, filament, orders, integrations, and troubleshooting",
+  vite: {
+    build: {
+      target: 'esnext'
+    }
+  },
   head: [
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
