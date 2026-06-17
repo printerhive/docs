@@ -4,6 +4,23 @@ description: "Printerhive public changelog with product updates, new features, f
 
 # Changelog
 
+## June 17, 2026
+
+*   **Model preparation and slicing:**
+    *   **3MF slicing:** 3MF model files can now be handled more directly in the slicing flow, including cases where the file is already sliced.
+    *   **Bambu Studio based slicing:** Printerhive now has a Bambu Studio slicing path with better profile matching, thumbnails, and support for printer-specific layer profiles.
+    *   **Slicing settings on file details:** Files created through slicing now show more of the settings used, making it easier to understand how a printable file was prepared.
+    *   **STL thumbnails in My Files:** STL uploads can now include generated preview thumbnails, so models are easier to recognize in file lists.
+
+*   **Print calculator and MakerWorld:**
+    *   **MakerWorld model links:** The print calculator can now work with MakerWorld models more reliably, including profile-based downloads when the integration is configured.
+    *   **More reliable calculator setup:** Print calculator profiles now have clearer printer, nozzle, and layer-profile controls, plus safer fallbacks during onboarding.
+
+*   **Queues, printers, and locations:**
+    *   **Cleaner automatic queues:** Empty auto-managed print queues are cleaned up more consistently after jobs are moved, removed, or finished.
+    *   **Better mobile printer detail:** Printer detail pages have improved spacing and controls on small screens.
+    *   **Location status badges:** Locations now show active or inactive client status at a glance.
+
 ## June 10, 2026
 
 *   **STL files and slicing:**
