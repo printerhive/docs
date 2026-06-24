@@ -4,6 +4,22 @@ description: "Printerhive public changelog with product updates, new features, f
 
 # Changelog
 
+## June 24, 2026
+
+*   **Printer sharing and farm access:**
+    *   **Permanent printer sharing:** Printerhive users can now invite another registered user to operate selected printers from their own account, without sharing passwords or full farm settings.
+    *   **Shared-printer controls:** Shared users can see printers shared with them, accept or leave invitations, start jobs, change AMS filament selections, and keep access to the files needed for shared print jobs.
+    *   **Safer access removal:** Revoking shared access now respects active print jobs, so a user can finish the current job while new shared-printer jobs are blocked.
+
+*   **STL and 3MF slicing:**
+    *   **Unified slicing settings:** The STL/3MF slicing screen now uses shared print-profile settings for printer model, nozzle, layer profile, walls, infill, supports, and surface options.
+    *   **Multi-filament project support:** Multi-material 3MF projects can map each filament slot to the right material from the catalog or user spools before slicing.
+    *   **More reliable sliced-file imports:** Newly sliced 3MF files are published in a safer temporary location, reducing production import failures caused by file permissions.
+
+*   **Workflow polish:**
+    *   **Instant print restored:** Starting an instant print directly from file lists opens the print modal correctly again.
+    *   **Demo and onboarding safety:** Demo account provisioning is more complete and better isolated from production users, improving public demos and review flows.
+
 ## June 17, 2026
 
 *   **Model preparation and slicing:**
