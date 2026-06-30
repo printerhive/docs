@@ -67,8 +67,8 @@ Enhanced Prusa support is on our roadmap for future updates.
 ## Requirements
 
 ### All Printers
-- Raspberry Pi (or similar device) running Printerhive client
-- Printers must be on the same local network as the Raspberry Pi
+- Printerhive client running on Windows, macOS, Raspberry Pi, or Linux
+- Printers must be on the same local network as the client device
 - Internet connection for cloud sync
 
 ### Bambu Lab
@@ -89,6 +89,6 @@ On newer printer firmware versions, you may also need to enable **Developer Mode
 
 ---
 
-Once you've confirmed your printer is supported, the next step is to review the [Hardware Requirements](./hardware-requirements.md) for your Raspberry Pi setup.
+Once you've confirmed your printer is supported, the next step is to review the [Hardware Requirements](./hardware-requirements.md) for your client device.
 
 If you have questions regarding the compatibility of your specific printer or setup, feel free to contact our [community or support channels](../community/index.md). 

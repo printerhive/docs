@@ -4,7 +4,7 @@ description: "Prepare Raspberry Pi OS Lite for the Printerhive client using Rasp
 
 # Preparing Raspberry Pi OS Lite
 
-Before installing the Printerhive client, you need a working Raspberry Pi with Raspberry Pi OS Lite installed. This guide shows how to use the official Raspberry Pi Imager tool.
+Before installing the Printerhive client on Raspberry Pi, you need a working Raspberry Pi with Raspberry Pi OS Lite installed. This guide shows how to use the official Raspberry Pi Imager tool. If you are installing on Windows or macOS, skip this page and use the desktop installer from the Printerhive guide.
 
 We recommend using **Raspberry Pi OS Lite (64-bit)** based on Debian Bookworm or later.
 
@@ -93,4 +93,4 @@ We recommend using **Raspberry Pi OS Lite (64-bit)** based on Debian Bookworm or
         7.  A terminal window will open asking for your username. Enter it and press Enter.
         8.  Enter your password when prompted and press Enter.
 
-    Once connected, you will see the command line prompt for your Raspberry Pi. 
+    Once connected, you will see the command line prompt for your Raspberry Pi. Continue with [Client Installation](./client-installation.md). The Linux installation command no longer requires a client API key; setup uses secure Printerhive login and location selection.

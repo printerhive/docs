@@ -6,7 +6,7 @@ description: "Connect Bambu Lab, Klipper, or Prusa printers to Printerhive manua
 
 This guide explains how to add your Bambu Lab printer to your Printerhive account.
 
-**Prerequisite:** Ensure your Bambu Lab printer is turned on, connected to the same Wi-Fi network as your Printerhive client device (e.g., Raspberry Pi), and set to **LAN Mode**. On newer firmware versions, you may also need to enable **Developer Mode** in the printer settings.
+**Prerequisite:** Ensure your Bambu Lab printer is turned on, connected to the same Wi-Fi network as your Printerhive client device (Windows, Mac, Raspberry Pi, or Linux), and set to **LAN Mode**. On newer firmware versions, you may also need to enable **Developer Mode** in the printer settings.
 
 **Highly Recommended:** For a stable connection, we strongly advise [setting up a static IP address (IP reservation)](#importance-of-ip-address-reservation-static-ip) for your printer in your router settings *before* adding it to Printerhive or as soon as possible thereafter. This prevents connection issues if your printer's IP address changes.
 
@@ -106,7 +106,7 @@ While usually not the cause of *connection* issues, ensure the **Serial Number (
 Confirm your printer is still set to **LAN Mode** in its network settings. On newer firmware versions, also verify that **Developer Mode** is enabled if available.
 
 #### Network Check
-Both the printer and the Printerhive client device (e.g., Raspberry Pi) *must* be on the exact same Wi-Fi/LAN network.
+Both the printer and the Printerhive client device *must* be on the exact same Wi-Fi/LAN network.
 
 #### Client Device Restart
-Try restarting the device where the Printerhive client is installed (e.g., your Raspberry Pi). Simply disconnect the power supply, wait a few seconds, and plug it back in. Sometimes a simple restart can resolve temporary connection glitches.
+Try restarting the device where the Printerhive client is installed. On Windows or macOS, quit and reopen the Printerhive app. On Raspberry Pi or Linux, restart the device or client service. Sometimes a simple restart can resolve temporary connection glitches.

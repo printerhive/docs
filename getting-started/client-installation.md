@@ -1,37 +1,54 @@
 ---
-description: "Install the Printerhive client on Raspberry Pi or another Docker-capable device and troubleshoot setup issues."
+description: "Install the Printerhive client on Windows, macOS, Raspberry Pi, or Linux and troubleshoot setup issues."
 ---
 
 # Client Installation
 
-Before proceeding with the installation, please ensure your hardware meets the [Hardware Requirements](./hardware-requirements.md) and that you have prepared your Raspberry Pi device following the [Prepare Raspberry Pi](./prepare-raspberry-pi.md) guide.
+Before proceeding with the installation, please ensure your hardware meets the [Hardware Requirements](./hardware-requirements.md). If you are installing on a Raspberry Pi, prepare it first using the [Prepare Raspberry Pi](./prepare-raspberry-pi.md) guide.
 
-> **Note for Advanced Users:** While this guide is primarily written for Raspberry Pi installation, the Printerhive client runs in Docker and can be installed on various other devices such as Synology NAS, virtual machines, Mac computers, servers, and other systems that support Docker. If you're technically proficient and prefer to use a different platform, you can adapt these instructions accordingly.
+Printerhive now supports client installation on **Windows**, **macOS**, and **Raspberry Pi / Linux**. New installations do **not** require a client API key. The client uses secure Printerhive login and lets you choose the location interactively during setup.
 
-## Installation Steps
+## Windows Installation
+
+1.  **Open the Printerhive Guide:** Log in to the Printerhive web application and open the interactive installation guide.
+2.  **Choose Windows:** In the client installation step, select **Windows**.
+3.  **Download and Run the Installer:** Download the Windows installer and run the `Printerhive-client-setup.exe` file.
+4.  **Sign In:** Open the Printerhive client and sign in with your Printerhive account.
+5.  **Select Location:** Choose the location this Windows client should manage.
+6.  **Continue Setup:** Once the client is connected, continue to [Connect Printer](./connect-printer.md).
+
+:::tip Microsoft Defender
+Microsoft Defender may show a warning on first launch. If you downloaded the installer from the Printerhive app, you can safely allow it to run.
+:::
+
+## macOS Installation
+
+1.  **Open the Printerhive Guide:** Log in to the Printerhive web application and open the interactive installation guide.
+2.  **Choose Mac:** In the client installation step, select **Mac**.
+3.  **Download and Open the Installer:** Download the `.dmg` file and open it.
+4.  **Install the App:** Drag Printerhive into the **Applications** folder.
+5.  **Sign In:** Open the Printerhive client and sign in with your Printerhive account.
+6.  **Select Location:** Choose the location this Mac client should manage.
+7.  **Continue Setup:** Once the client is connected, continue to [Connect Printer](./connect-printer.md).
+
+## Raspberry Pi / Linux Installation
 
 1.  **Connect via SSH:** Access the command line of your device using SSH. Instructions for connecting from Windows, macOS, and Linux are included at the end of the [Preparing Raspberry Pi OS Lite guide](./prepare-raspberry-pi.md#_10-power-on-and-connect).
 
-2.  **Run the Installation Script:** Log in to the Printerhive web application and follow the interactive installation guide. The guide will provide you with a specific command to run on your Raspberry Pi via SSH.
-    *   **Recommended Method:** Copy the command directly from the web application's installation guide. This command usually includes your unique API key, simplifying the process.
-    *   **Alternative Method:** If you prefer or need to run a generic command, you can use the following. Note that if you use this method, you **will** need to manually provide the API key when prompted (see Step 3).
-        ```bash
-        curl -o install-printerhive.sh https://app.printerhive.com/install && bash install-printerhive.sh
-        ```
+2.  **Run the Installation Script:** Log in to the Printerhive web application and follow the interactive installation guide. The Linux installation command is:
 
-3.  **Provide API Key (If Necessary):**
-    *   If you used the **alternative method** in Step 2, the script will prompt you to enter your API key.
-    *   **How to find your API key:**
-        *   Go to [Locations](https://app.printerhive.com/user/locations) in your Printerhive account
-        *   Click the eye icon (👁️) next to your API Key to reveal it
-        *   Copy the key and paste it into the SSH terminal when prompted
-    *   If you used the recommended command (Step 2), the key is already included.
+    ```bash
+    curl -o install-printerhive.sh https://app.printerhive.com/install && bash install-printerhive.sh
+    ```
+
+3.  **Follow the Interactive Setup:** The installer will guide you through secure Printerhive login and location selection. You no longer need to paste a client API key into the command or installer.
 
 4.  **Wait for Completion:** The installation process is quick. Most time is spent installing Docker and Docker Compose (if not already present). The Printerhive client itself installs almost instantly.
 
 5.  **Installation Complete:** Once the script finishes, the Printerhive client is installed and running.
 
     The client will automatically:
+    - Connect the selected location to your account
     - Scan your network for Bambu Lab printers
     - Add newly discovered printers to your account
     - Synchronize with existing printers in your account
@@ -42,14 +59,16 @@ Before proceeding with the installation, please ensure your hardware meets the [
 
 The following issues may occur during installation:
 
-*   **Incorrect or invalid API Key:** If you entered the API key manually (using the alternative installation method), ensure you copied it completely and without errors. You can find your API key at [Locations](https://app.printerhive.com/user/locations).
-*   **Unstable internet connection:** The installation script downloads necessary packages and Docker images. If your internet connection is unstable or slow, a download error may occur, and the installation will fail. Ensure a stable internet connection for the Raspberry Pi throughout the installation.
-*   **Insufficient SD card space:** Make sure you have enough free space on your SD card. Minimum SD card size requirements are listed in the [Hardware Requirements](./hardware-requirements.md) section.
-*   **Permission issues:** The installation script requires `sudo` privileges for some operations. Run the command as instructed, typically with `sudo bash setup.sh`.
+*   **Login problem:** Ensure you are using the correct Printerhive account and that the client device has internet access.
+*   **No location available:** Create a location in Printerhive first, then restart the client setup and select it during installation.
+*   **Wrong location selected:** Reopen the client setup and select the correct location, or reinstall/reconfigure the client if needed.
+*   **Unstable internet connection:** The installation script downloads necessary packages and Docker images. If your internet connection is unstable or slow, a download error may occur, and the installation will fail. Ensure a stable internet connection throughout the installation.
+*   **Insufficient SD card or disk space:** Make sure you have enough free space on your client device. Minimum Raspberry Pi SD card size requirements are listed in the [Hardware Requirements](./hardware-requirements.md) section.
+*   **Permission issues on Linux:** The installation script requires `sudo` privileges for some operations.
 *   **Power interruption:** A sudden power loss to the Raspberry Pi during installation can lead to an inconsistent state and installation failure.
 *   **Previous failed installation:** If you are attempting to reinstall after a previous failure, fragments may remain on the system that cause conflicts. In such cases, the simplest solution might be to start with a fresh installation of Raspberry Pi OS.
 
-If problems persist, we recommend checking the installation script's output for specific error messages that might indicate the cause of the problem.
+If problems persist, we recommend checking the installation script or desktop client output for specific error messages that might indicate the cause of the problem.
 
 If you encounter any issues or have questions during the process, feel free to join our community:
 

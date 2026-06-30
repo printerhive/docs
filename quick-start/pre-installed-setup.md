@@ -4,7 +4,7 @@ description: "Set up a pre-installed Printerhive Raspberry Pi package, scan the 
 
 # Pre-installed Raspberry Pi Setup
 
-This guide is for customers who purchased a Raspberry Pi with the PrinterHive client pre-installed. Your device comes ready to use with the client software and your account API key already configured.
+This guide is for customers who purchased a Raspberry Pi with the PrinterHive client pre-installed. Your device comes ready to use with the client software pre-installed. Client activation uses secure Printerhive login and location selection instead of manually entering an API key.
 
 ## What's in the Package
 
