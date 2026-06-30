@@ -1,10 +1,10 @@
 ---
-description: "Use Printerhive locations to organize printers, clients, API keys, and multi-site setups."
+description: "Use Printerhive locations to organize printers, clients, and multi-site setups."
 ---
 
 # Locations
 
-Locations allow you to connect 3D printers from different physical places or distribute a large number of printers across multiple Raspberry Pis for performance reasons.
+Locations allow you to connect 3D printers from different physical places or distribute a large number of printers across multiple client devices for performance reasons.
 
 Locations can also manage user access rights. Users can be assigned to specific locations, such as within a home, school, or workshop, limiting their access accordingly.
 
@@ -26,17 +26,17 @@ To add a new location:
 
 When creating a new location, you have two options:
 
-*   **Add a new client:** This requires a separate Raspberry Pi for the new location. A unique API Key will be generated for this client, which you'll need during the [client installation process](./../getting-started/client-installation.md).
-*   **Assign to existing clients:** Use this option if you want to segment printers connected to a single Raspberry Pi. For example, you might separate printers in a workshop from those in an office within the same building, all managed by one Raspberry Pi.
+*   **Add a new client:** Use this when the new location should be managed by a separate Windows, macOS, Raspberry Pi, or Linux client. During the [client installation process](./../getting-started/client-installation.md), sign in securely and select this location.
+*   **Assign to existing clients:** Use this option if you want to segment printers connected to a single existing client. For example, you might separate printers in a workshop from those in an office within the same building, all managed by one client device.
 
 ## Activating a New Client
 
 After creating a location with a new client, you need to activate it:
 
-1.  During the client activation wizard, you'll be asked if you are installing on your own device (your Raspberry Pi). Confirm this to view the API Key generated for the new client location.
-2.  Alternatively, if you have a pre-installed device supplied by Printerhive, select the option for pre-installed devices. You will be prompted to enter the API Key that came with your purchased client.
-3.  Use the appropriate API Key (either the newly generated one for your own Pi or the one from the pre-installed device) during the client software installation or activation step.
-4.  Click **Activate** in the Printerhive dashboard to complete the process. The client will be ready to use.
+1.  Install the Printerhive client on Windows, macOS, Raspberry Pi, or Linux.
+2.  Sign in with your Printerhive account in the client setup.
+3.  Select the location the client should manage.
+4.  Once the client is online, the location is ready to use.
 
 ## Deleting a Location
 

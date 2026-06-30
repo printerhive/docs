@@ -1,12 +1,18 @@
 ---
-description: "Hardware requirements for running the Printerhive client on Raspberry Pi or another Docker-capable device."
+description: "Hardware requirements for running the Printerhive client on Windows, macOS, Raspberry Pi, or Linux."
 ---
 
 # Hardware Requirements for Printerhive Client
 
-The Printerhive client application **requires a dedicated, supported Raspberry Pi device** to operate. This device acts as the local hub for managing your 3D printers, ensuring secure and reliable communication within your network.
+The Printerhive client acts as the local hub for managing your 3D printers, ensuring secure and reliable communication within your network.
 
-This page details the specific Raspberry Pi models we support and the essential peripheral requirements to ensure smooth and stable performance of the Printerhive client.
+You can run the client on Windows, macOS, Raspberry Pi, or supported Linux devices. For always-on print farm setups, we still recommend a dedicated Raspberry Pi or another always-on device.
+
+## Windows and macOS Client Requirements
+
+*   **Windows:** Windows 10 or later, 64-bit.
+*   **macOS:** macOS 13 Ventura or later.
+*   The computer must stay powered on, connected to the same local network as your printers, and running the Printerhive client.
 
 ## Supported Raspberry Pi Models
 
@@ -48,24 +54,24 @@ Once you have chosen a supported Raspberry Pi, ensure you have the following hig
 
 ## Using a Dedicated vs. Shared Raspberry Pi
 
-While the Printerhive client is lightweight, we **strongly recommend dedicating a separate Raspberry Pi** solely for its operation, especially if you manage multiple printers or rely on high availability.
+While the Printerhive client is lightweight, we **strongly recommend dedicating a separate Raspberry Pi or always-on device** solely for its operation, especially if you manage multiple printers or rely on high availability.
 
-Some users consider installing the Printerhive client on a Raspberry Pi already running other services (like Klipper/Mainsail/Fluidd, Home Assistant, etc.) to consolidate hardware. While technically possible, here's why a dedicated Pi is better:
+Some users consider installing the Printerhive client on a shared device already running other services (like Klipper/Mainsail/Fluidd, Home Assistant, etc.) to consolidate hardware. While technically possible, here's why a dedicated device is better:
 
 *   **Avoiding Interference:** Other demanding software on the same Pi could impact Printerhive's responsiveness or stability.
-*   **Preventing Accidental Shutdowns:** If the Printerhive client shares a Pi that controls a 3D printer (e.g., via Klipper), actions like powering down that printer might also shut down the Printerhive client, disrupting management of other printers.
+*   **Preventing Accidental Shutdowns:** If the Printerhive client shares a device that controls a 3D printer (e.g., via Klipper), actions like powering down that printer might also shut down the Printerhive client, disrupting management of other printers.
 *   **Simplicity and Reliability:** A dedicated device minimizes potential software conflicts and ensures the Printerhive client is always available.
 *   **Resource Availability:** Ensures Printerhive has all the necessary resources without competing with other applications.
 
-*   **Technical Note on Docker:** The Printerhive client runs in a Docker container. If you are an advanced user running other Dockerized applications on a shared Pi, be mindful of potential port conflicts or resource contention. A dedicated Pi avoids this complexity.
+*   **Technical Note on Docker:** The Printerhive client runs in a Docker container. If you are an advanced user running other Dockerized applications on a shared Pi, be mindful of potential port conflicts or resource contention. A dedicated device avoids this complexity.
 
 Given the affordability of models like the Raspberry Pi Zero 2 W (for minimal setups) or the superior Raspberry Pi 5, dedicating a device is a small investment for ensuring smooth, reliable operation of your printer farm.
 
 ## Unsupported Hardware Configurations
 
-To ensure stability, full functionality, and access to our technical support, the Printerhive client application is designed and optimized **exclusively for the supported Raspberry Pi models** listed above.
+To ensure stability, full functionality, and access to our technical support, use one of the supported installation paths: Windows, macOS, Raspberry Pi, or supported Linux.
 
-While the Printerhive client (which runs in a Docker container) might theoretically operate on other hardware setups, please be aware of the following:
+While the Linux client might theoretically operate on other hardware setups, please be aware of the following:
 
 *   **NAS (Network Attached Storage) Devices:** Running the Printerhive client on NAS devices is **not officially supported.** While some users might attempt this, we do not provide technical support for such configurations, and you may encounter compatibility or performance issues due to the specific architecture and software environment of NAS systems.
 *   **Standard Servers / Virtual Machines (VMs):** Similarly, running the client in a Docker container on standard Linux servers or within Virtual Machines is **not officially supported.** While it may function, Printerhive does not offer technical support for these setups, and unexpected issues or limitations may arise.

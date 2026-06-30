@@ -22,7 +22,7 @@ Try these steps in order:
 2. **Use IP reservation.** Reserve a static IP for the printer in your router.
 3. **Check LAN mode.** For Bambu Lab printers, verify LAN mode and Developer Mode if your firmware requires it.
 4. **Check same network.** The printer and Printerhive client must be on the same local network.
-5. **Check the client device.** Make sure the Raspberry Pi or other client device is powered on and connected.
+5. **Check the client device.** Make sure the Windows/macOS client app is running, or that the Raspberry Pi/Linux client device is powered on and connected.
 6. **Restart in order:** printer, client device, then router if needed.
 
 If this happens after a firmware update, check printer network and LAN settings first.
@@ -35,6 +35,7 @@ The most common causes are:
 - LAN mode was disabled,
 - Developer Mode is required after firmware update,
 - client device lost Wi-Fi,
+- desktop or laptop running the client went to sleep,
 - router changed subnet or guest network settings,
 - printer is on a different Wi-Fi than the client.
 
@@ -93,7 +94,7 @@ See [Orders, products, and projects](/production/orders-products-projects).
 
 ## Restarting the Printerhive client
 
-The simplest method is to restart the Raspberry Pi or client device.
+The simplest method is to quit and reopen the Windows/macOS client app, or restart the Raspberry Pi/Linux client device.
 
 Advanced users can restart only the Docker container:
 
