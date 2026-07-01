@@ -4,6 +4,26 @@ description: "Printerhive public changelog with product updates, new features, f
 
 # Changelog
 
+## July 1, 2026
+
+*   **Desktop client setup and locations:**
+    *   **Windows client support:** The setup guide now includes a Windows desktop client path alongside Mac and Linux, with a direct download option during onboarding.
+    *   **Secure desktop login:** Desktop clients can authenticate through Printerhive and attach to the correct location during setup, reducing manual configuration work.
+    *   **Clearer location management:** Locations now show client platform, version status, manual update guidance for desktop clients, and download links when a newer desktop version is available.
+
+*   **Bambu Lab print reports:**
+    *   **Optional print reports:** Bambu Lab print jobs can now generate user-facing reports with telemetry, final capture, filament usage, temperatures, fan speeds, chamber data, AMS data, and print progress charts.
+    *   **Reports in print history:** Printer history has a refreshed layout with access to available reports, making completed prints easier to review.
+    *   **Cloud usage transparency:** Account storage now separates regular files from print reports, so it is clearer what consumes cloud quota.
+
+*   **File storage, previews, and profile media:**
+    *   **More reliable uploaded files and captures:** User uploads, profile images, ticket attachments, print previews, and final print captures are now served through Printerhive-backed routes instead of direct storage links.
+    *   **Safer storage migration:** Cloud-sync and cleanup improvements reduce broken legacy file references and help keep older uploads available during the storage move.
+
+*   **Support and app responsiveness:**
+    *   **Better support conversations:** Support tickets now handle file attachments, clearer ticket states, and more complete bug-report follow-up.
+    *   **Faster everyday pages:** Notification counts, statistics, and heavily used print-job and file views received performance improvements for snappier loading.
+
 ## June 24, 2026
 
 *   **Printer sharing and farm access:**
