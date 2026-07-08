@@ -4,6 +4,24 @@ description: "Printerhive public changelog with product updates, new features, f
 
 # Changelog
 
+## July 8, 2026
+
+*   **Mini-shop storefronts:**
+    *   **Customer-facing shops:** Printerhive users can now set up a simple public shop for printed products, including storefront pages, product details, cart, checkout, order tracking, and seller setup.
+    *   **Seller setup wizard:** The mini-shop setup now guides users through shop URL, Stripe payments, branding, shipping, legal text, product selection, and publishing.
+    *   **Richer product presentation:** Storefront products can use categories, rich descriptions, gallery images, variants, and clearer add-to-cart behavior.
+    *   **Safer publishing and storage:** Inactive storefront panels are gated more clearly, and mini-shop images are included in cloud storage usage.
+
+*   **Slicing and Bambu Lab uploads:**
+    *   **Slicer in Tools:** A dedicated Slicer tool is now available from the Tools menu for uploading STL and 3MF models before preparing them for printing.
+    *   **Shared-printer slicing:** Printer models from permanently shared Bambu Lab printers are now included in slicer options, so shared access works better in preparation workflows.
+    *   **Clearer Bambu upload guidance:** Standalone Bambu Lab G-code uploads are now blocked with guidance to upload sliced 3MF files instead, including an OrcaSlicer hint when available.
+    *   **More accurate printer matching:** Bambu printer model detection during file uploads is more reliable.
+
+*   **Files and print controls:**
+    *   **Bulk file selection fixed:** Bulk selection in My Hive now stays reliable after navigating folders and using select-all toggles.
+    *   **Better skip-object view:** The skip-objects 3D viewer has improved alignment and plate orientation, making object selection clearer during supported print jobs.
+
 ## July 1, 2026
 
 *   **Desktop client setup and locations:**
