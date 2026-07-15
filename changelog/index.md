@@ -4,6 +4,21 @@ description: "Printerhive public changelog with product updates, new features, f
 
 # Changelog
 
+## July 15, 2026
+
+*   **Interactive 3MF slicing:**
+    *   **Edit models on the build plate:** The Printerhive slicer now lets you arrange models directly on the virtual build plate before slicing.
+    *   **Build a plate your way:** Add more models, duplicate objects, and prepare several parts together without leaving the slicing workflow.
+    *   **Object-level preparation:** Apply individual slicing settings and filament choices to selected objects for more control over multi-part and multi-material projects.
+
+*   **More flexible print queues:**
+    *   **Optional sub-queues:** Choose whether to use separate print queues or keep all jobs together in one main queue.
+    *   **Clearer material warnings:** Material-shortage warnings in the queue can now be expanded when needed, and Printerhive remembers your preference.
+
+*   **HiveWatch device pairing:** Pair a HiveWatch device from Settings with a short-lived code, see connected devices, and remove access whenever needed.
+
+*   **Printer status displays:** Lightweight external status displays can now retrieve your current printer states, progress, temperatures, and active jobs more easily.
+
 ## July 8, 2026
 
 *   **Mini-shop storefronts:**
