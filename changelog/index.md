@@ -4,6 +4,18 @@ description: "Printerhive public changelog with product updates, new features, f
 
 # Changelog
 
+## July 22, 2026
+
+*   **Anycubic Kobra X support:** Add and manage Anycubic Kobra X printers in Printerhive, with live printer status, print progress, controls, filament handling, and file preparation tailored to the printer.
+
+*   **Easier queue work:** Add or edit a note directly from a print-job row, making handovers and special instructions easier to spot in the queue.
+
+*   **Smoother files and orders:** STL and 3MF files now download correctly, and selecting multiple shop orders is more reliable.
+
+*   **More control over client updates:** Connected clients can opt out of automatic updates, while administrators can send a specific version when needed.
+
+*   **More reliable camera streams:** Added safeguards to keep live-stream uploads stable and prevent runaway sessions from affecting normal use.
+
 ## July 15, 2026
 
 *   **Interactive 3MF slicing:**
