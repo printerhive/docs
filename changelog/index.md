@@ -4,6 +4,14 @@ description: "Printerhive public changelog with product updates, new features, f
 
 # Changelog
 
+## July 29, 2026
+
+*   **Bambu Lab hardware alerts:** Active hardware errors now appear directly on printer cards, printer details, dashboards, print jobs, and shared-printer views, with clear descriptions and live updates.
+
+*   **More accurate AMS status:** Printerhive now detects AMS Auto Refill correctly across both older and newer Bambu Lab status formats.
+
+*   **More reliable multi-location monitoring:** Connected clients now receive only the cameras assigned to their location, while printer status and snapshot traffic is isolated from the main app to keep everyday pages responsive under load.
+
 ## July 22, 2026
 
 *   **Anycubic Kobra X support:** Add and manage Anycubic Kobra X printers in Printerhive, with live printer status, print progress, controls, filament handling, and file preparation tailored to the printer.
