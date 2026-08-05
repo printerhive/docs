@@ -4,6 +4,10 @@ description: "Printerhive public changelog with product updates, new features, f
 
 # Changelog
 
+## August 5, 2026
+
+*   **Offline Bambu Lab firmware updates:** Upload a compatible firmware package to your printer directly from its new Firmware tab, follow live transfer progress, and finish the update using model-specific on-screen instructions. Printerhive also shows the installed version and release notes, and checks that the printer is online, idle, and using the correct package before starting.
+
 ## July 29, 2026
 
 *   **Bambu Lab hardware alerts:** Active hardware errors now appear directly on printer cards, printer details, dashboards, print jobs, and shared-printer views, with clear descriptions and live updates.
