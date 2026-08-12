@@ -4,6 +4,10 @@ description: "Printerhive public changelog with product updates, new features, f
 
 # Changelog
 
+## August 12, 2026
+
+*   **Print job controls restored:** Print job details once again show object-skipping controls on supported printers and the option to share print progress. The page also uses the correct layout for signed-in users.
+
 ## August 5, 2026
 
 *   **Offline Bambu Lab firmware updates:** Upload a compatible firmware package to your printer directly from its new Firmware tab, follow live transfer progress, and finish the update using model-specific on-screen instructions. Printerhive also shows the installed version and release notes, and checks that the printer is online, idle, and using the correct package before starting.
