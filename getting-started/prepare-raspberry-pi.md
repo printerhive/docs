@@ -4,93 +4,72 @@ description: "Prepare Raspberry Pi OS Lite for the Printerhive client using Rasp
 
 # Preparing Raspberry Pi OS Lite
 
-Before installing the Printerhive client on Raspberry Pi, you need a working Raspberry Pi with Raspberry Pi OS Lite installed. This guide shows how to use the official Raspberry Pi Imager tool. If you are installing on Windows or macOS, skip this page and use the desktop installer from the Printerhive guide.
+Before installing the Printerhive client on a Raspberry Pi, you need a working Raspberry Pi with Raspberry Pi OS Lite installed. This guide uses the current Raspberry Pi Imager workflow. If you are installing on Windows or macOS, skip this page and use the desktop installer from the Printerhive guide.
 
-We recommend using **Raspberry Pi OS Lite (64-bit)** based on Debian Bookworm or later.
+Use the current **Raspberry Pi OS Lite (64-bit)** release. Printerhive supports the current Raspberry Pi OS release and Raspberry Pi OS based on Debian Bookworm or later.
 
 ## Requirements
 
-*   A Raspberry Pi (Supported models listed in Client Installation guide)
+*   A [supported Raspberry Pi](./hardware-requirements.md#supported-raspberry-pi-models)
 *   An SD card (minimum 16 GB, Class 10 recommended)
 *   A computer with an SD card reader
 *   Internet connection
 
-## Steps using Raspberry Pi Imager
+## Install Raspberry Pi OS Lite
 
-### 1. Download and Install Raspberry Pi Imager
-*   Go to the official [Raspberry Pi Software page](https://www.raspberrypi.com/software/).
-*   Download and install the Raspberry Pi Imager for your operating system (Windows, macOS, or Ubuntu).
+### 1. Install Raspberry Pi Imager
 
-### 2. Prepare the SD Card
-*   Insert the SD card into your computer's SD card reader.
+Download and install the latest Raspberry Pi Imager for Windows, macOS, or Ubuntu from the official [Raspberry Pi Software page](https://www.raspberrypi.com/software/).
 
-### 3. Run Raspberry Pi Imager
-*   Open the Raspberry Pi Imager application.
+### 2. Select the device, operating system, and storage
 
-### 4. Choose Raspberry Pi Device
-*   Click on "CHOOSE DEVICE" and select the model of your Raspberry Pi (e.g., Raspberry Pi 4, Raspberry Pi Zero 2 W).
+1.  Insert the SD card into your computer.
+2.  Open Raspberry Pi Imager.
+3.  In the **Device** tab, select your Raspberry Pi model, then select **Next**.
+4.  In the **OS** tab, select **Raspberry Pi OS (other)** and then **Raspberry Pi OS Lite (64-bit)**. Choose the current release offered by Imager, then select **Next**.
+5.  In the **Storage** tab, select your SD card, then select **Next**.
 
-### 5. Choose Operating System
-*   Click on "CHOOSE OS".
-*   Select "Raspberry Pi OS (other)".
-*   Select "Raspberry Pi OS Lite (64-bit)". *Ensure it's based on Bookworm or newer if available, otherwise update it later.*
+:::danger Check the selected storage
+Writing the image permanently erases the selected storage device. Verify that you selected the correct SD card before continuing.
+:::
 
-### 6. Configure Settings (Important for Headless Setup & Printer Communication)
-*   Click the **Gear icon** (⚙️) or "NEXT" to access advanced options / customization.
-*   **Set hostname:** We recommend changing the default hostname to `printerhive.local` for easier identification on your network, but you can keep the default `raspberrypi.local` or choose another.
-*   **Enable SSH:** Check the box to "Enable SSH" and set a secure password. This is crucial for remote access.
-*   **Configure Wi-Fi:** Check the box to "Configure wireless LAN". Enter your Wi-Fi network name (SSID) and password. **Important:** Your Raspberry Pi *must* be on the same network as your 3D printers for Printerhive to function. Since many printers (like Bambu Lab models) only use Wi-Fi, configuring Wi-Fi here is essential for most setups.
-*   **Set locale settings:** Adjust language and keyboard layout if needed.
-*   Click "SAVE".
+### 3. Customise Raspberry Pi OS
 
-### 7. Choose Storage
-*   Click on "CHOOSE STORAGE".
-*   Select your SD card from the list. **Be careful to select the correct drive, as all data on it will be erased.**
+The **Customisation** tab opens after you select the storage device. Configure the following settings before writing the image:
 
-### 8. Write the Image
-*   Click on "WRITE".
-*   Confirm that you want to erase the SD card and continue.
-*   The Imager will download the OS image and write it to the SD card. This may take several minutes.
+1.  **Hostname:** Enter a hostname containing only letters, numbers, and hyphens. We recommend `printerhive`, which is normally reachable on your local network as `printerhive.local`.
+2.  **Localisation:** Select your location, time zone, and keyboard layout. This also sets the Wi-Fi regulatory domain.
+3.  **User:** Create an administrator username and a secure password. Remember this username; you will use it to connect over SSH. Raspberry Pi OS no longer creates a default `pi` user automatically.
+4.  **Wi-Fi:** Enter the SSID and password of the network used by your printers. The Raspberry Pi must be connected to the same local network as the printers managed by Printerhive.
+5.  **Remote Access:** Enable **SSH** and choose password authentication or public-key authentication. Password authentication uses the username and password configured in the **User** tab.
 
-### 9. Eject and Insert
-*   Once the process is complete, safely eject the SD card from your computer.
-*   Insert the SD card into your Raspberry Pi.
+Raspberry Pi Connect is not required for Printerhive installation.
 
-### 10. Power On and Connect
-*   Connect your Raspberry Pi to power.
-*   Give it a few minutes to boot up for the first time.
-*   Once booted, you need to connect to its command line via SSH from your computer. You'll use the hostname and credentials you configured in [Step 6](#_6-configure-settings-important-for-headless-setup-printer-communication).
+### 4. Write the image
 
-    **Connecting via SSH:**
+1.  Review the selected device, operating system, storage, and customisation settings.
+2.  Start writing the image and confirm that the SD card can be erased.
+3.  Wait for Imager to finish writing and verifying the image.
+4.  Safely eject the SD card and insert it into your Raspberry Pi.
 
-    *   **On macOS or Linux:**
-        1.  Open the **Terminal** application.
-        2.  Type the following command, replacing `your_username` with the username you set (default is often `pi` or the one you specified) and `hostname` with the hostname you set (`printerhive.local` or `raspberrypi.local`):
-            ```bash
-            ssh your_username@hostname
-            ```
-            Example: `ssh pi@printerhive.local`
-        3.  If it's your first time connecting, you might be asked to confirm the host's authenticity. Type `yes` and press Enter.
-        4.  Enter the password you set for the user when prompted.
+## Power on and connect with SSH
 
-    *   **On Windows (10/11 or newer):**
-        1.  Open **Command Prompt** or **PowerShell**.
-        2.  Type the following command, replacing `your_username` and `hostname` as described above:
-            ```bash
-            ssh your_username@hostname
-            ```
-            Example: `ssh pi@printerhive.local`
-        3.  If it's your first time connecting, confirm the host's authenticity by typing `yes` and pressing Enter.
-        4.  Enter the password when prompted.
+1.  Connect the Raspberry Pi to power.
+2.  Allow a few minutes for the first boot and network connection.
+3.  Open Terminal on macOS or Linux, or PowerShell/Command Prompt on Windows 10 or 11.
+4.  Connect using the username and hostname configured in Imager:
 
-    *   **On Older Windows Versions (or using PuTTY):**
-        1.  Download and install an SSH client like [PuTTY](https://www.putty.org/).
-        2.  Open PuTTY.
-        3.  In the "Host Name (or IP address)" field, enter the hostname (`printerhive.local` or `raspberrypi.local`).
-        4.  Ensure the "Port" is set to `22` and "Connection type" is `SSH`.
-        5.  Click "Open".
-        6.  If it's your first time, you might see a security alert about the server's host key. Click "Accept" or "Yes".
-        7.  A terminal window will open asking for your username. Enter it and press Enter.
-        8.  Enter your password when prompted and press Enter.
+    ```bash
+    ssh your_username@printerhive.local
+    ```
 
-    Once connected, you will see the command line prompt for your Raspberry Pi. Continue with [Client Installation](./client-installation.md). The Linux installation command no longer requires a client API key; setup uses secure Printerhive login and location selection.
+    Replace `your_username` if you chose a different username. If you used another hostname, replace `printerhive.local` as well.
+
+5.  On the first connection, verify the hostname and accept the SSH host key prompt by entering `yes`.
+6.  Enter the password configured in Imager, unless you selected public-key authentication.
+
+:::tip If the hostname does not work
+Check your router's connected-device list to find the Raspberry Pi IP address, then connect with `ssh your_username@IP_ADDRESS`. Confirm that the computer, Raspberry Pi, and printers are on the same local network.
+:::
+
+Once the command-line prompt appears, continue with [Client Installation](./client-installation.md). The Linux installation command does not require a client API key; setup uses secure Printerhive login and location selection.
