@@ -4,6 +4,12 @@ description: "Printerhive public changelog with product updates, new features, f
 
 # Changelog
 
+## September 9, 2026
+
+*   **More reliable API permissions:** Printerhive fixes permission checks that could reject permitted integration requests. Business accounts now correctly inherit API access from lower plans, and permission changes no longer wait for stale cached permissions to expire.
+
+*   **More accurate access to linked data:** API ownership checks now follow related records, including printer statuses, AMS slots, and print-job previews, so integrations can retrieve their own linked data where permitted. Write ownership checks and response-field filtering are also stricter.
+
 ## August 12, 2026
 
 *   **Print job controls restored:** Print job details once again show object-skipping controls on supported printers and the option to share print progress. The page also uses the correct layout for signed-in users.
