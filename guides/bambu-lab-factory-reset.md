@@ -1,5 +1,7 @@
 ---
-description: "Factory reset procedure for Bambu Lab printers after firmware updates when LAN mode or connectivity breaks."
+title: "Bambu Lab Factory Reset After a Firmware Update"
+titleTemplate: false
+description: "Reset your Bambu Lab printer after a firmware update to troubleshoot Printerhive connectivity, then restore Wi-Fi, LAN mode and your connection settings."
 ---
 
 # How to Perform a Factory Reset on Your Bambu Lab Printer After a Firmware Update
