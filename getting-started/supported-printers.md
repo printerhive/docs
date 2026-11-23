@@ -47,27 +47,44 @@ Before setting up your hardware, it's important to verify that your 3D printer i
 - All Printerhive features available
 
 ## Prusa Printers
-**Connected through the Printerhive client (PrusaLink)**
+**Two ways to connect**
 
-### Supported Models
+### Via Prusa Connect (no Raspberry Pi)
+Buddy-based printers with firmware 8.0.0 or newer connect straight to Printerhive over the internet, without a client in your local network. See [Prusa Printers via Prusa Connect](./connect-prusa.md).
+
+- CORE One, CORE One L
+- MK4 / MK4S
+- MK3.9, MK3.5
+- XL
+- MINI
+
+Features:
+- Real-time status, temperatures (including chamber), and print progress
+- Controls: home, jog, extrude, temperatures, part cooling and chamber fan, speed, and flow
+- Loaded material on the external spool card
+- Chamber light on CORE One, CORE One L, and XL
+- Printer dialogs answered from Printerhive
+- Print from Printerhive and from PrusaSlicer or OrcaSlicer, queue start when the operator presses Set Ready
+- One-click firmware updates to official Prusa releases
+- Buddy3D camera through the optional Printerhive client in your network
+
+### Via the Printerhive client (PrusaLink)
 - MK4 (with PrusaLink)
 - XL (with PrusaLink)
 - Other models with PrusaLink enabled
 
-### Features
+Features:
 - Remote monitoring
 - Print job control
 - Basic queue management
 - File upload and management
-- Upload from PrusaSlicer and OrcaSlicer straight to Printerhive, see [Upload from PrusaSlicer and OrcaSlicer](../files/slicer-upload.md)
 
-:::info Prusa Connect support is coming soon
-Connecting Buddy-based Prusa printers (CORE One, MK4/MK4S, MK3.9, MK3.5, XL, MINI) through Prusa Connect, without a Raspberry Pi or a client in your local network, is coming soon.
-:::
+Both ways support [Upload from PrusaSlicer and OrcaSlicer](../files/slicer-upload.md).
 
 ## Requirements
 
 ### All Printers
+Prusa printers connected via Prusa Connect need no client. All other printers need:
 - Printerhive client running on Windows, macOS, Raspberry Pi, or Linux
 - Printers must be on the same local network as the client device
 - Internet connection for cloud sync
@@ -85,8 +102,8 @@ On newer printer firmware versions, you may also need to enable **Developer Mode
 - Network access to printer
 
 ### Prusa
-- PrusaLink enabled
-- Network access to printer
+- Via Prusa Connect: firmware 8.0.0 or newer, internet access, a USB drive left in the printer
+- Via the Printerhive client: PrusaLink enabled and network access to the printer
 
 ---
 

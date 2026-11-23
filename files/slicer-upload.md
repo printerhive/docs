@@ -97,9 +97,7 @@ A printer that reports a finished or stopped print is not treated as free: the l
 
 The print always goes to the printer in the address. Printerhive does not move it to another printer.
 
-:::info Prusa Connect through Printerhive is coming soon
-Connecting Prusa printers to Printerhive through Prusa Connect, without a Raspberry Pi, is not available yet. Until then, Prusa printers are connected through the Printerhive client, and **Upload and print** stores the file for you to start in Printerhive.
-:::
+See [Prusa Printers via Prusa Connect](/getting-started/connect-prusa) for how to connect a Prusa printer through Prusa Connect.
 
 ## Checks before a print starts
 

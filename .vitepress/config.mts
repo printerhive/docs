@@ -56,6 +56,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         collapsed: false,
         items: [
           { text: 'Supported Printers', link: '/getting-started/supported-printers' },
+          { text: 'Prusa via Prusa Connect', link: '/getting-started/connect-prusa' },
           { text: 'Hardware Requirements', link: '/getting-started/hardware-requirements' },
           { text: 'Prepare Raspberry Pi', link: '/getting-started/prepare-raspberry-pi' },
           { text: 'Client Installation', link: '/getting-started/client-installation' },
