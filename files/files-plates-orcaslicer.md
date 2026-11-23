@@ -73,6 +73,8 @@ Typical flow:
 
 If a slicer upload does not appear, check your account, selected printer/profile, and network connection.
 
+For Prusa printers, PrusaSlicer and OrcaSlicer can upload straight to a specific printer. See [Upload from PrusaSlicer and OrcaSlicer](/files/slicer-upload).
+
 ## Practical naming rules
 
 Good file names save time later. Use names that describe what the file is, not only when it was sliced.

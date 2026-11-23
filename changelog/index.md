@@ -4,6 +4,12 @@ description: "Printerhive public changelog with product updates, new features, f
 
 # Changelog
 
+## November 23, 2026
+
+*   **Prusa printers via Prusa Connect, no Raspberry Pi:** Buddy-based Prusa printers (CORE One, MK4/MK4S, MK3.9, MK3.5, XL, MINI) with firmware 8.0.0 or newer can connect straight to Printerhive through their built-in Prusa Connect. Add a printer, copy the connection file to a USB drive, and load it in the printer's Prusa Connect menu. Printerhive then shows status, temperatures, and the loaded material, offers full controls including the chamber light and fan, answers printer dialogs, starts queued jobs when the operator presses Set Ready, and updates firmware with one click. See [Prusa Printers via Prusa Connect](/getting-started/connect-prusa).
+
+*   **Upload from PrusaSlicer and OrcaSlicer:** Send `.gcode` and `.bgcode` files from PrusaSlicer or OrcaSlicer straight to a Prusa printer in Printerhive, from any network. Set the slicer up as a PrusaLink physical printer with the printer's Printerhive address and a slicer key created in the printer settings. Upload stores the file in your library with its preview; on Prusa printers connected through the Printerhive client, start the print in the app. Before a print starts, Printerhive checks the printer model, nozzle diameter, and loaded material, and a repeated send does not create a second job. See [Upload from PrusaSlicer and OrcaSlicer](/files/slicer-upload).
+
 ## September 9, 2026
 
 *   **More reliable API permissions:** Printerhive fixes permission checks that could reject permitted integration requests. Business accounts now correctly inherit API access from lower plans, and permission changes no longer wait for stale cached permissions to expire.
