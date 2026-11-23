@@ -47,7 +47,7 @@ Before setting up your hardware, it's important to verify that your 3D printer i
 - All Printerhive features available
 
 ## Prusa Printers
-**Basic support for newer models**
+**Connected through the Printerhive client (PrusaLink)**
 
 ### Supported Models
 - MK4 (with PrusaLink)
@@ -59,9 +59,10 @@ Before setting up your hardware, it's important to verify that your 3D printer i
 - Print job control
 - Basic queue management
 - File upload and management
+- Upload from PrusaSlicer and OrcaSlicer straight to Printerhive, see [Upload from PrusaSlicer and OrcaSlicer](../files/slicer-upload.md)
 
-:::info Enhanced Prusa Support
-Enhanced Prusa support is on our roadmap for future updates.
+:::info Prusa Connect support is coming soon
+Connecting Buddy-based Prusa printers (CORE One, MK4/MK4S, MK3.9, MK3.5, XL, MINI) through Prusa Connect, without a Raspberry Pi or a client in your local network, is coming soon.
 :::
 
 ## Requirements

@@ -81,6 +81,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         collapsed: false,
         items: [
           { text: 'Files, Plates, and OrcaSlicer', link: '/files/files-plates-orcaslicer' },
+          { text: 'Upload from PrusaSlicer and OrcaSlicer', link: '/files/slicer-upload' },
           { text: 'File Management', link: '/features/file-management' }
         ]
       },
