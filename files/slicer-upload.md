@@ -7,7 +7,7 @@ description: "Send G-code from PrusaSlicer or OrcaSlicer straight to a Prusa pri
 You can send a sliced file from PrusaSlicer or OrcaSlicer directly to a Prusa printer in Printerhive. The slicer talks to Printerhive in the cloud, so it works from any network. You do not need a Raspberry Pi or a local PrusaLink for the upload itself.
 
 - **Upload** stores the file in your Printerhive file library.
-- **Upload and print** stores the file and, on a printer connected through Prusa Connect, starts the print or puts it in the printer's queue. See [What happens after the upload](#what-happens-after-the-upload).
+- **Upload and print** stores the file. On a printer connected through Prusa Connect (coming soon), it also starts the print or puts it in the printer's queue after the checks pass; if a check fails, the file is only stored and the print is not queued. See [What happens after the upload](#what-happens-after-the-upload).
 
 The setup is available for Prusa printers. For Bambu Lab and Klipper printers, keep using the existing OrcaSlicer workflow described in [Files, Plates, and OrcaSlicer](/files/files-plates-orcaslicer#orcaslicer-workflow).
 
@@ -89,8 +89,8 @@ What **Upload and print** does depends on how the printer is connected to Printe
 
 | Printer connection | Upload and print |
 | --- | --- |
-| Prusa via Prusa Connect through Printerhive, printer idle or ready | The print starts right away. |
-| Prusa via Prusa Connect through Printerhive, printer busy, offline, or not ready | The print job waits in this printer's queue. It starts when the operator presses **Set Ready** on the printer, or marks the printer ready in Printerhive. |
+| Prusa via Prusa Connect through Printerhive (coming soon), printer idle or ready | After the [checks](#checks-before-a-print-starts) pass, the print starts right away if the printer is available. If the printer is reserved or another start is pending, the print job waits in this printer's queue. |
+| Prusa via Prusa Connect through Printerhive (coming soon), printer connected but busy or not ready | After the [checks](#checks-before-a-print-starts) pass, the print job waits in this printer's queue. It starts when the operator presses **Set Ready** on the printer, or marks the printer ready in Printerhive. |
 | Prusa on the Printerhive client (PrusaLink, Raspberry Pi) | The file is uploaded only. Start the print in Printerhive. The slicer shows: *"The file is in Printerhive, start the print in the app."* |
 
 A printer that reports a finished or stopped print is not treated as free: the last part may still be on the bed. The job waits in the queue until the printer is set ready.
@@ -103,7 +103,9 @@ Connecting Prusa printers to Printerhive through Prusa Connect, without a Raspbe
 
 ## Checks before a print starts
 
-Before **Upload and print** starts or queues a print, Printerhive checks the file against the printer:
+These checks apply to printers connected through Prusa Connect through Printerhive, which is **coming soon**. On a printer connected through the Printerhive client, **Upload and print** only stores the file, and you start the print in Printerhive.
+
+Before **Upload and print** starts or queues a print on a Prusa Connect printer, Printerhive checks the file against the printer:
 
 - **Printer model:** the file must be sliced for the model of this printer.
 - **Nozzle diameter:** the file's nozzle diameter must match a nozzle set for this printer in Printerhive. Only the diameter is compared; nozzle variants such as high flow do not matter.
@@ -119,6 +121,8 @@ If a check fails, the file is still stored in Printerhive, but the print does no
 - *"... it was sliced for a 0.6 mm nozzle, printer CORE One 1 has a different nozzle in Printerhive."*
 - *"... the file does not say its printer model, nozzle diameter or material. Slice it in PrusaSlicer with a Prusa printer profile and send it again."*
 - *"... Printerhive does not know the material X. Start the print in Printerhive."*
+
+If the printer is offline, Printerhive may not be able to determine its loaded material. The file is then stored, but the print may not be queued.
 
 A job that waits in the queue is checked again right before it starts. If the filament on the printer was changed in the meantime and no longer matches, the job is not started.
 

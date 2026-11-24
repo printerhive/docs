@@ -6,7 +6,7 @@ description: "Printerhive public changelog with product updates, new features, f
 
 ## November 23, 2026
 
-*   **Upload from PrusaSlicer and OrcaSlicer:** Send `.gcode` and `.bgcode` files from PrusaSlicer or OrcaSlicer straight to a Prusa printer in Printerhive, from any network. Set the slicer up as a PrusaLink physical printer with the printer's Printerhive address and a slicer key created in the printer settings. Upload stores the file in your library with its preview; on Prusa printers connected through the Printerhive client, start the print in the app. Before a print starts, Printerhive checks the printer model, nozzle diameter, and loaded material, and a repeated send does not create a second job. See [Upload from PrusaSlicer and OrcaSlicer](/files/slicer-upload).
+*   **Upload from PrusaSlicer and OrcaSlicer:** Send `.gcode` and `.bgcode` files from PrusaSlicer or OrcaSlicer straight to a Prusa printer in Printerhive, from any network. Set the slicer up as a PrusaLink physical printer with the printer's Printerhive address and a slicer key created in the printer settings. On a Prusa printer connected through the Printerhive client, Printerhive accepts the file into your library with its preview, and you start the print in the app. A repeated send within a few minutes does not store a second copy. See [Upload from PrusaSlicer and OrcaSlicer](/files/slicer-upload).
 
 ## September 9, 2026
 
